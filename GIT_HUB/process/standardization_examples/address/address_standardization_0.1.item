@@ -1,0 +1,1916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="DIRECTORY" name="COMP_DEFAULT_FILE_DIR" value="/home/scorreia/DEMOS/Talend-5.0.0M5/studio/Talend-All-r69141-V5.0.0M5/workspace"/>
+    <elementParameter field="DIRECTORY" name="PRODUCT_ROOT_DIR" value="/home/scorreia/DEMOS/Talend-5.0.0M5/studio/Talend-All-r69141-V5.0.0M5"/>
+    <elementParameter field="DIRECTORY" name="COMP_DEFAULT_PROJECT_DIR" value="/home/scorreia/DEMOS/Talend-5.0.0M5/studio/Talend-All-r69141-V5.0.0M5/workspace/demo"/>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms256M -Xmx1024M"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="AUTHOR" value="s@t.c"/>
+    <elementParameter field="TEXT" name="STATUS" value=""/>
+    <elementParameter field="TEXT" name="NAME" value="address_standardization"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.1"/>
+    <elementParameter field="TEXT" name="PURPOSE" value=""/>
+    <elementParameter field="TEXT" name="DESCRIPTION" value=""/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="32"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPTIONS" value="none"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PASS_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value=""/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;/home/scorreia/DEMOS/Talend-5.0.0M5/studio/Talend-All-r69141-V5.0.0M5/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_10"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PASS" value="&quot;&quot;"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value=""/>
+    <routinesParameter id="_pYZDQPM5EeChUtgF2Chl2w" name="DQTechnical"/>
+    <routinesParameter id="_pYqJAPM5EeChUtgF2Chl2w" name="DataOperation"/>
+    <routinesParameter id="_pYWnAPM5EeChUtgF2Chl2w" name="DataQuality"/>
+    <routinesParameter id="_pYUKwPM5EeChUtgF2Chl2w" name="DqStringHandling"/>
+    <routinesParameter id="_pYzS8PM5EeChUtgF2Chl2w" name="Mathematical"/>
+    <routinesParameter id="_pYei0PM5EeChUtgF2Chl2w" name="Numeric"/>
+    <routinesParameter id="_pYi0QPM5EeChUtgF2Chl2w" name="Relational"/>
+    <routinesParameter id="_pXdPIPM5EeChUtgF2Chl2w" name="SQLike"/>
+    <routinesParameter id="_pYslQPM5EeChUtgF2Chl2w" name="StringHandling"/>
+    <routinesParameter id="_pYg_EPM5EeChUtgF2Chl2w" name="TalendDataGenerator"/>
+    <routinesParameter id="_pYvBgPM5EeChUtgF2Chl2w" name="TalendDate"/>
+    <routinesParameter id="_pYbfgPM5EeChUtgF2Chl2w" name="TalendString"/>
+    <routinesParameter id="_NPC8gPNFEeC8SvS5Rk98Sg" name="Address_standardizationTstandardizerow_1"/>
+  </parameters>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1"/>
+    <elementParameter field="CHECK" name="START" value="true"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="FNAME"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LNAME"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MNAME"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUST_ADDR1"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUST_ADDR2"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUST_ADDR3"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUST_ST"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZIP_4"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZIP"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUST_CNTRY_CD"/>
+      <elementValue elementRef="VALUE" value=""/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="ROGER|DARGAN||2 TULIP RD||MAHOPAC|NY|10541|10541|US&#xA;CARROL|Surdi||110 A Heritage Hills||Somers|NY|105891316|10589|US&#xA;INGRID|marziliano||8 Garet Place||Commack|NY|11725|11725|US&#xA;Ina C.|MATESEVAC JR||7111 FOX MEADOW DR||HUMMELSTOWN|PA|170369296|17036|US&#xA;DON|Owiler||1051 Neff Alley||Red Lion|PA|17356|17356|US&#xA;JARRETT|LIEBERMAN||242 FRANKLIN ST||WILKES BARRE|PA|18702|18702|US&#xA;joseph|JR|B|4066 BLYTHEBURN ROAD||MOUNTAINTOP|PA|18707|18707|US&#xA;don|Parker||11014 Sunny Side Road||Bridgeville|DE|19933|19933|US&#xA;JOE|Klempa||2 Lakewood Dr.||Medfield|MA|2052|2052|US&#xA;Larry|HARTLEY||3400 N CHARLES ST||BALTIMORE|MD|21218|21218|US&#xA;Larry|Hartley Jr.||3400 N. CHARLES ST.||BALTIMORE|MD|21218|21218|US&#xA;Lawrence|Hartly||3400 N CHARLES STREET||BALTIMORE|MD|21218|21218|US&#xA;JAMIE|Liu||50 Harbor Point Blvd Apt 508||Dorchester|MA|21253222|21253|US&#xA;Lynda|GUYANT||3889 SHENANDOAH DR||WILLIAMSBURG|VA|23188|23188|US&#xA;TOM|BROWN||49 SPRUCE ST STE 1000||LANGLEY A F B|VA|23665|23665|US&#xA;Kristy|hazelwood||3419 norton st||Hopewell|VA|23860|23860|US&#xA;LORI|HALL||HC 74 BOX 3276L||CHAPMANVILLE|WV|255089534|25508|US&#xA;ARVIS|VREELAND|C|PO BOX 4994||MARIETTA|GA|30061|30061|US&#xA;Matt|Cowans||57 Haig St||Box Hill S|CA|3128|3128|US&#xA;MATTHEW|Gowans||57 Haig Street||Box Hill South|CA|3128|3128|US&#xA;RAMONA|Durrance||452 Cr 90 East||Bunnell|FL|32110|32110|US&#xA;YIING|ALEXANDER||123 ARDEN DR||PALATKA|FL|321774029|32177|US&#xA;Melissa|CORREA-Richard||325 PLEASANT STREET||CONCORD|NH|3301|3301|US&#xA;DAVID|RICHARD|J|325 PLEASENT ST||CONCORD|NH|3301|3301|US&#xA;Dave|Richard||325 PLEASANT STRT||Concorde|NH|3301|3301|US&#xA;MICHAEL|Freitas||King Court West  11347|SW 86 Lane|Miami|FL|33173|33173|US&#xA;ROBERT|Dept.|m|3655 N W 87th Avenue|Headquarters / Receiving Dept|Miami|FL|331782428|33178|US&#xA;KENT|Hernandez||3655 NW 87th Ave||Miami|FL|33178|33178|US&#xA;Pon|emey||1515 Yakutat Rd||North Port|FL|34287|34287|US&#xA;PATRICK|FAISON||129 HEDSTROM DR||DOTHAN|AL|36301|36301|US&#xA;JAMES|MANUEL|R|RT 1 BOX 81||ASHLAND|MS|38603|38603|US&#xA;Albert|WOODS||1580 ST RT 56||London|OH|43140|43140|US&#xA;Celeste|STRAIGHT||2553 WIMBLEDEN PARK||TOLEDO|OH|43617|43617|US&#xA;tinq|BROWNING||534 3RD ST||PHILO|OH|43771|43771|US&#xA;Carol|Swislocki||23030 Marion Rd.||North Olmsted|OH|44070|44070|US&#xA;Carol|TALMAGE|R|612 SHELTERGLEN||LEBANON|OH|45036|45036|US&#xA;ED|O DAIRE||P.O. BOX 36||UPLAND|IN|46989|46989|US&#xA;ROBERT|DEMES||1655 EAST BETHEL LN||BLOOMINGTON|IN|47408|47408|US&#xA;Roman|D'ANGELO||52699 JESSIE DR||CHESTERFIELD|MI|48051|48051|US&#xA;KEVIN|Hemati||3158 Bolgos Circle||Ann Arbor|MI|48105|48105|US&#xA;Akber|Yee||48312 Chesterfield Dr||Canton|MI|48187|48187|US&#xA;CHARLES|SNEDEKER||2841 E WALTON BLVD||AUBURN HILLS|MI|483262559|48326|US&#xA;ANDREAS|WOO||8375 ELKRUN DRIVE||CLARKSTON|MI|48348|48348|US&#xA;YVONNE|ABREGO|R|1123 BRENTWOOD APT 102||BELDING|MI|48809|48809|US&#xA;KELSON|HERR||606 2ND ST||JACKSON|MI|492031767|49203|US&#xA;EDWARD|NIEKOWAL||11940 BUNDAY DR||JASPER|MI|49248|49248|US&#xA;DEAN|PORCH|R|4571 COUNTY ROAD J W||SAINT PAUL|MN|551261190|55126|US&#xA;Jo|koehler||1633 isabella pkwy||Chaska|MN|55318|55318|US&#xA;Joanne|Koeler||1633 Isabelle Parkway||Chaska|MN|55318|55318|&#xA;george|MCPHERSON||17955 NOBLE ROAD||HUTCHINSON|MN|55350|55350|US&#xA;FRANKIE|MOONEY III||1047 S EVERGREEN AVE APT 206|APT 206|ARLINGTON HTS|IL|600053160|60005|US&#xA;ADAM|zakreta||103 heather ct||Rolling Meadows|IL|60008|60008|US&#xA;GUITAR|Mccue||2905 Scottlynne Dr||Park Ridge|IL|60068|60068|US&#xA;Danielle|ROSENBERG||2423 MADIERA CT||BUFFALO GROVE|IL|60089|60089|US&#xA;JUSTIN|HUMPHREY||1191 PRIDES RUN||LAKE IN THE HIL|IL|60102|60102|US&#xA;RON|CUNNINGHAM||403 S STEWART AVE||LOMBARD|IL|601482850|60148|US&#xA;JOEL|Kleckner||9058 Forestview Rd.||Evanston|IL|60203|60203|US&#xA;ZACH|ABELS||14115 WESTERN AVE TRLR 363||BLUE ISLAND|IL|604064571|60406|US&#xA;JOY R|Ickis||15 Hereford dr.||Crete|IL|60417|60417|US&#xA;GLEN|MCMANUS||996 S HAMPTON CT||AURORA|IL|605066916|60506|US&#xA;DONNA|OTTO||1915 STEWARD LN||PLAINFIELD|IL|605866504|60586|US&#xA;BRANDI|Tryban||9521 South Damen Avenue||Chicago|IL|60643|60643|US&#xA;Trent|BILLADEUA||1538 W RT 102||BOURBONNAIS|IL|60914|60914|US&#xA;STEVE|CHAMBERLAIN||913 S 1ST||MORTON|IL|61550|61550|US&#xA;NAT|Ferry||21 West Hazel Dell|Millikin University|Springfield|IL|62703|62703|US&#xA;PAUL|FAETH|K|1423 S. MEDOWBROOK RD.||SPRINGFIELD|IL|62707|62707|US&#xA;LEE|HARKER||834 W NORTH||FLORA|IL|62839|62839|US&#xA;neal|FERDER||3626 ANGE DR||FLORISSANT|MO|63034|63034|US&#xA;JOHN|KERSHNER Jr.||RT. 1 BOX 181||AMSTERDAM|MO|64723|64723|US&#xA;Eddie|norrie||3 farm court||wallingford|CT|6492|6492|US&#xA;Ermias|MUNDAY||909 EAST REPUBLIC RD  C-200||SPRINGFIELD|MO|65807|65807|US&#xA;NATHANIEL|FERRO||4433 LEAVENWORTH RD||KANSAS CITY|KS|661042235|66104|US&#xA;CHRISTOPHER|SHUFELDT|L|2501 SOUTHERN HILLS DR||COFFEYVILLE|KS|673379602|67337|US&#xA;KELLY|HERSHEY|C|5607 N. 112TH CIRCLE||OMAHA|NE|68164|68164|US&#xA;Bong Han|Uberoi||321 Upper Mountain Avenue||Upper Montclair|NJ|7043|7043|US&#xA;carolyn/mike|SUSSKY|C|703 E. 19TH AVENUE||COVINGTON|LA|70433|70433|US&#xA;YONN|AGOOS||235 PASCACK RD||PARK RIDGE|NJ|76561125|76561|US&#xA;Tinika|Bryant||7600 Highmeadow CT #203||Houston|TX|77063|77063|US&#xA;Yolanda|albritton||3013 Village Ln||Deer Park|TX|775365037|77536|US&#xA;Dean|PHILIP||6500 RIVERPLACE BLVD||AUSTIN|TX|78730|78730|US&#xA;Ismo|Martindale||501 S. Fillmore St., Ste 5A||Amarillo|TX|791012449|79101|US&#xA;Barton|Vinson||6008 Norwich||Amarillo|TX|79109|79109|US&#xA;CHARLES E|SMITH||3126 LARIMER ST||Denver|CO|80205|80205|US&#xA;Chuck|Faber|S|12 Main Street|PO Box 326|GUERNSEY|WY|82214|82214|US&#xA;Charles|SPENCER FABER||P O BOX 326||GUERNSEY|WY|82214|82214|US&#xA;TIM|BUCK||1301 NTH 17TH||BOISE|ID|83702|83702|US&#xA;Timothy|Buck|H|1301 9th Street|Apt 17|Boise|ID|83702|83702|US&#xA;Paul|ESPINOSA||13539 WEST WALDEMAR ST.||BOISE|ID|83713|83713|US&#xA;JEFF|Laughlin||445 S 300 W||Salt Lake Cty|UT|84111|84111|US&#xA;Bambang|Vontsolos||1037 E. San Juan Ave.||Phoenix|AZ|85014|85014|US&#xA;JENNIFER|LARAMAN||16230 N 38TH ST||PHOENIX|AZ|85032|85032|US&#xA;THOMAS|BUSTAMANTE||4418 N 106TH DR||PHOENIX|AZ|85037|85037|US&#xA;BINU|VANOSDOL||12828 S 45TH PL||PHOENIX|AZ|850444035|85044|US&#xA;CURT|SANDBERG||215 N POWER RD|NT 366 St|MESA|AZ|852058453|85205|US&#xA;DAVID|REICHENDACHER||901 S COUNTRY CLUB||MESA|AZ|85210|85210|US&#xA;CHARLES|STAUBER||10628 N INDIAN WELLS DR||FOUNTAIN HILLS|AZ|852685728|85268|US&#xA;becky|Villicana||2181 E. La Vieve Lane||Tempe|AZ|85284|85284|US&#xA;JIM &amp; LESLI|Koeppen||23868 N 36th ave||Glendale|AZ|85310|85310|US&#xA;LARY|HART C/O BILL SMITH||3519 N. SNEAD DRIVE||GOODYEAR|AZ|85338|85338|US&#xA;CHAD|Stewart||3227 N. 150th Drive||Goodyear|AZ|85338|85338|US&#xA;Brenda|TRINIDAD|M|7525 W. YUCCA||PEORIA|AZ|85345|85345|US&#xA;STEVEN|Castillo||4720 E. Broadway Blvd.||Tucson|AZ|85711|85711|US&#xA;Stepehen|Castillo||4720 E. Broadway Blvd.||Tucson|AZ|85711|85711|US&#xA;Steve|Castillo||4720 E. Broadway Blvd.||Tucson|AZ|85711|85711|US&#xA;BOBBY|Vance||6061 E 27TH||TUCSON|AZ|85711|85711|US&#xA;SHAUN|Clayton||7201 E Pomegranate||Tucson|AZ|85730|85730|US&#xA;Eric|MURDOCK||3654 E FJORD PONY RD||TUCSON|AZ|857398352|85739|US&#xA;William and Mary|ARMSTRONG||421 W JUNIPER ST||FLAGSTAFF|AZ|86001|86001|US&#xA;SPENCER FABER|CHRISTENSEN|P|301 GROVE AVE||PRESCOTT|AZ|86301|86301|US&#xA;Delmar|PERFORMANCE HALL||1100 E. SHELDON ST.||PRESCOTT|AZ|86301|86301|US&#xA;john|KIRAKOSIAN||UNIT 2086 5155 W TROPICANA AVE||LAS VEGAS|NV|891037008|89103|US&#xA;HENRY|MAZZELLA||5150 SPYGLASS HILL DR.||LAS VEGAS|NV|891422769|89142|US&#xA;SHMULY|CLAEYS||5353 W. DESERT INN RD.||LAS VEGAS|NV|89146|89146|US&#xA;Richard|DOZIER||3820 ALCORN RD||FALLON|NV|89406|89406|US&#xA;JOSEPH|JONES||2728 S SPAULDING AVE||LOS ANGELES|CA|900162422|90016|US&#xA;Scott|COLIN||379 SOUTH LOMA DRIVE||LOS ANGELES|CA|90017|90017|US&#xA;MONIKA|FLETCHER|K|1051 S. COCHRAN AVENUE, #8||LOS ANGELES|CA|90019|90019|US&#xA;DEANNA|PERTOFSKY||12301 WILSHIRE BLVD.,SUITE 200||LOS ANGELES|CA|90025|90025|US&#xA;PATRICK|FAN|C|610 3/4 PARKMAN AVE||LOS ANGELES|CA|90026|90026|US&#xA;DAN|SANAGUSTIN|C|4150 LOS FELIZ BLVD APT 4||LOS ANGELES|CA|900272338|90027|US&#xA;STEVEN|CARTIER|T|6381 HOLLYWOOD BLVD SUITE 580||HOLLYWOOD|CA|90028|90028|US&#xA;JANET|Lim||1721 N. Broadway||Los Angeles|CA|90031|90031|US&#xA;RICARDO|DUMANDAN||339 S SYCAMORE AVE||LOS ANGELES|CA|900363005|90036|US&#xA;John|KEAL||752 SO. COCHREN AVE||LOS ANGELES|CA|90036|90036|US&#xA;Stephen|Carter||7425 Sunset Boulevard||Hollywood|CA|90046|90046|US&#xA;Steve|Cartier||7425 Sunset Blvd.||Hollywood|CA|90046|90046|US&#xA;CESAR|STOLZ||7425 Sunset Blvd.||LOS ANGELES|CA|90046|90046|US&#xA;ANTHONY|weinberg||7425 Sunset Blvd.||Hollywood|CA|90046|90046|US&#xA;James|MANCEWICZ|P|3770 MEIER ST||LOS ANGELES|CA|900663650|90066|US&#xA;SCOTT|COLDSNOW||9696 CULVER BLVD # 203||CULVER CITY|CA|902322700|90232|US&#xA;JUSTIN|HOTTA|M|4319 CARTESIAN CIRCLE||PALOS VERDES PENINSU|CA|90274|90274|US&#xA;Michael|Freisleben||6254 Monero Drive||Rancho Palos Verdes|CA|90275|90275|US&#xA;MANY|Gudino||8433 Otis Street||South Gate|CA|90280|90280|US&#xA;RONALD|CRAWFORD||613 W ELLIS AVE||INGLEWOOD|CA|90302|90302|US&#xA;TRISHA|BERNSTEIN||549 LINCOLN BLVD||SANTA MONICA|CA|904022811|90402|US&#xA;Estrellita|MOREHOUSE|E|13800 BIOLA AVE||LA MIRADA|CA|90639|90639|US&#xA;Ester|Morhouse||13800 BIOLA AVE||LA MIRADA|CA|90639|90639|US&#xA;L|HASH||5702 BLACKTHORNE AVE||LAKEWOOD|CA|907121708|90712|US&#xA;GEOFF|Mesghenna||3815 E. 15th street||Long Beach|CA|90804|90804|US&#xA;ROBERT|Day||PO Box 90933||Long Beach|CA|90809|90809|US&#xA;RYAN|Costa||3227 N. Crestford Dr.||Altadena|CA|91001|91001|US&#xA;YAVAPAI COLLEGE|Ali||415 Deodar Lane||Bradbury|CA|91010|91010|US&#xA;Ernest|MOSQUEDA|C|646 ORANGE DR.||SIERRA MADRE|CA|91024|91024|US&#xA;ANTHONY|WERNER||3748 DANNY ST.||GLENDALE|CA|91214|91214|US&#xA;ROBERT|DOHERTY||24329 MULHOLLAND HWY||CALABASAS|CA|913022319|91302|US&#xA;Thomas|Burns||199 Greenmeadow Ave.||Thousand Oaks|CA|91320|91320|US&#xA;DAVID|RAHAM|L|3847 SAN NICOLAS||NEWBURY PARK|CA|91320|91320|US&#xA;DOUG|OLSEN||18319 OAKMONT #846||CANYON COUNTRY|CA|91351|91351|US&#xA;DEANNA|PETERSEN|W|300 MEDEA CREEK LANE||OAK PARK|CA|91377|91377|US&#xA;SUSAN|CAPNERHURST||1543 TRUMAN ST||SAN FERNANDO|CA|91403|91403|US&#xA;MICHAEL|GALECK||13935 HUSTON ST||SHERMAN OAKS|CA|91423|91423|US&#xA;SALLY|Copp Esq.||842 E. Fairmount Rd.||Burbank|CA|91501|91501|US&#xA;TED|CALVIN||280 W TUJUNGA AVE APT J||BURBANK|CA|91502|91502|US&#xA;Edward|Calvin Jr||280 West Tujunga Avenue|APT J|Birbank|CA|91502|91502|US&#xA;Cedric|Sullivan||7502 Camellia Ave||N Hollywood|CA|91605|91605|US&#xA;AMY|WOOD||5510 CORTEEN PL||NORTH HOLLYWOOD|CA|916071664|91607|US&#xA;CHRISTOPHER|SHAFFER||8361 VICARA DR.||ALTA LOMA|CA|91701|91701|US&#xA;GAIL|MINAGAWA|C|PO BOX 9521|C/O AZUSA PACIFIC UNIVERSITY|AZUSA|CA|917029521|91702|US&#xA;B. A.|VOORHEES|P|340 E FOOTHILL BLVD||CLAREMONT|CA|917113116|91711|US&#xA;Teresa Gonzalez|C/O Pro audio MG|h|1054 North Azusa Ave.||Covina|CA|91722|91722|US&#xA;Terry|Gonzalez||1054 North Azusa Ave.||Covina|CA|91722|91722|US&#xA;XAVIER|Amaro||11209 Amiata Dr.||Rancho Cucamonga|CA|91730|91730|US&#xA;Gary|Millan||1201 Canyon View Dr.||La Verne|CA|91750|91750|US&#xA;Gail|MILLIKAN|S|1768 MORNING CYN. RD.||DIAMOND BAR|CA|91765|91765|US&#xA;ALEX|WOODLEY|D|763 EAST RAYMOND ST.||UPLAND|CA|91786|91786|US&#xA;richard|Dulawan||P.O box965||Alpine|CA|91903|91903|US&#xA;RICHARD|driskill||8825 murray dr||La Mesa|CA|91942|91942|US&#xA;Julio|Florez||8825 Murray Dr.||La Mesa|CA|91942|91942|US&#xA;Juan|Florez||8825 Murray Drive||La Mesa|CA|91942|91942|US&#xA;Raul|Florez-Sanchez||8825 Murray Dr.||La Mesa|CA|91942|91942|US&#xA;JULIO|Huovila||8825 Murry Dr.||La Mesa|CA|91942|91942|US&#xA;EDGAR|NIXON|W|8170 CHAZ PLACE||LA MESA|CA|91942|91942|US&#xA;Don|Sanches||8825 Murray Dr||La Mesa|CA|91942|91942|US&#xA;Juan|Sanchez||8825 Murray Dr.||La Mesa|CA|91942|91942|US&#xA;Dan|SANCHEZ||825 Murray Dr.||La Mesa|CA|91942|91942|US&#xA;DAMON|sanchez||8825 Murray Dr.||La Mesa|CA|91942|91942|US&#xA;Hoi|MAXWELL||945 PARAISO AVE||SPRING VALLEY|CA|91977|91977|US&#xA;Will|ANDERSON||4257 STERLING VIEW DR||FALLBROOK|CA|92028|92028|US&#xA;FORREST|MOORE|P|1522 DEL MAR RD.||OCEANSIDE|CA|92057|92057|US&#xA;TONY|Blelloch||15680 Kingman Rd.||Poway|CA|92064|92064|US&#xA;JIM|Kolod||13745 Powers Road||Poway|CA|92064|92064|US&#xA;MICHAEL|Gammill||15615 Vista Vicente Dr.|#26|Ramona|CA|92065|92065|US&#xA;DANIEL|rotta||408 silver shadow dr||San Marcos|CA|92078|92078|US&#xA;STEVE|Castro||5998 Alcala Park|President's Office|San Diego|CA|92110|92110|US&#xA;COWBOY|SCHLOSSER||2040 GARFIELD RD||SAN DIEGO|CA|921101229|92110|US&#xA;Josiah|JAUREGUI||4349 CLAIREMONT DR||SAN DIEGO|CA|921175534|92117|US&#xA;KIM|HEAVILIN||RFD#4 87A||CORONADO|CA|921182832|92118|US&#xA;RYAN|COUCH||7747 HILLENDALE DR||SAN DIEGO|CA|92120|92120|US&#xA;Karen Parker|Holladay||11371 Woodcraft Way||San Diego|CA|92131|92131|US&#xA;RYAN|COTERO||211 SUNSET DR||IMPERIAL|CA|92251|92251|US&#xA;Arturo|WARD||2494 W MAIN ST|SPC 114|BARSTOW|CA|923113659|92311|US&#xA;Mia|GIBBONS|R|12991MESA GRANDE DR||YUCAIPA|CA|92399|92399|US&#xA;CHRISTOPHER|Silliman||33459 Wallace Way||Yucaipa|CA|92399|92399|US&#xA;CHRIS|Silveira||351 St. Catherines Str||Oakland|CA|92399|92399|US&#xA;VINCENT|BEADLE||6801 OSBUN RD||SAN BERNARDINO|CA|92404|92404|US&#xA;BILL|VARELA|C|964 W 25TH ST||SN BERNRDNO|CA|924053110|92405|US&#xA;Kathy|Hill||32940 Wildomar Rd.||Lake Elsinore|CA|92530|92530|US&#xA;HUGH|MATTSON||2811 ALNE DR||HEMET|CA|925451227|92545|US&#xA;BRENNAN|TOVES|J|25527 PALO CEDRO DR.||MORENO VALLEY|CA|92551|92551|US&#xA;EDWIN|NEUGEBAUER||42024 BOOTHILL LN||MURRIETA|CA|925626114|92562|US&#xA;L|HARVEY||5 JENNER SUITE 100||IRVINE|CA|92618|92618|US&#xA;Bissol|VANGROW|S|1015 WHITE SAILS WAY|PO BOX 1024|CORONA DEL  MAR|CA|92625|92625|US&#xA;James|LYON||2615 Willo Lane||costa mesa|CA|92627|92627|US&#xA;Benjamin|Villalta||26356 Vintage Woods||Lake Forest|CA|92630|92630|US&#xA;Damien|sanchez||606 S. Brea Blvd.||Brea|CA|92821|92821|US&#xA;CRISANDRA|Santizo||606 S. Brea Blvd.||Brea|CA|92821|92821|US&#xA;JONNY|KAUFMAN||8103 E SANTA CRUZ AVE||ORANGE|CA|928695652|92869|US&#xA;DEANDREA|PHAN||310 JEFFERSON ST||PLACENTIA|CA|92870|92870|US&#xA;Samuel|Colins||74 Hill View Rd||Ventura|CA|93004|93004|US&#xA;SAM|COLLINS||74 HILLVIEW||VENTURA|CA|93004|93004|US&#xA;Samantha|Collins-Smith||74 Hillview RD.||Ventura|CA|93004|93004|US&#xA;Sammy|Collons||744 Hill Vu Road||Ventora|CA|93004|93004|US&#xA;przemek|Ellison||145 Catalina dr||Oak View|CA|93022|93022|US&#xA;EMRE|MURRIETA||911 IVYWOOD||OXNARD|CA|93030|93030|US&#xA;PURIFICACION|ELLIS||1091 APPLE TON RD||SIMI VALLEY|CA|93065|93065|US&#xA;Tony|BOLD|L|7574 NEWPORT DR||GOLETA|CA|93117|93117|US&#xA;Daryl|RODEN||700 S SHAFTER AVE|SPC  102|SHAFTER|CA|932632662|93263|US&#xA;ERNESTO|MORTON|L|7700 SADDLEBACK||BAKERSFIELD|CA|93309|93309|US&#xA;Vida|BENITEZ||11503 CAMPSITE WAY||BAKERSFIELD|CA|93312|93312|US&#xA;Chuck|Selnick||5510 Seasons Drive||Bakersville|CA|93313|93313|US&#xA;Grace|MCLAUGHLIN|J|14026 LA CASCADA CT.||BAKERSFIELD|CA|93314|93314|US&#xA;Giovanni|MCPHERSON||% ERNIE BALL|151 SUBURBAN RD|SAN LUIS OBISPO|CA|93401|93401|US&#xA;Al|Woody||PO BOX 8103||SAN LUIS OBISPO|CA|934038103|93403|US&#xA;ALAN|WOODY||P O BOX 8103||SAN LUIS OBISPO|CA|93409|93409|US&#xA;ALAINA|WOODY #F-45646||P O BOX 8103||SAN LUIS OBISPO|CA|93409|93409|US&#xA;KALEB|HOLMES|M|2555 HWY 154/DUNN SCHOOL||LOS OLIVOS|CA|93441|93441|US&#xA;DON|PAGE|D|BCO 2BSTB 2BCT 1CD PROSPERITY||APO|AE|9348|9348|US&#xA;TJ|BROWN|V|101ST AIRBORNE FSC 3187TH INF||FOB BRASSFIELD-MORA|AE|9349|9349|US&#xA;XUAN VAN|ALLISON||15304 LANFAIR AVE||LANCASTER|CA|93535|93535|US&#xA;CHAD|STOFIK||5705 BULFORD PL||LANCASTER|CA|93536|93536|US&#xA;DAVID|Rabut||38110 Trillport Avenue||Palmdale|CA|93552|93552|US&#xA;DERRICK|PEARMAN|M|3601 BRABHAM AVE||ROSAMOND|CA|93560|93560|US&#xA;MOHAMMAD|Foster||2197 Polson Ave||Clovis|CA|936115332|93611|US&#xA;ANDREW|WINTHER|G|6031 E CIMARRON AVE||FRESNO|CA|937276811|93727|US&#xA;ARACELI|Watts||4th Plt B 2/111Th Fa|Camp Bucca|Apo|AE|9375|9375|US&#xA;MELINDA|GIBSON||3194 SUSAN AVE||MARINA|CA|939332615|93933|US&#xA;MARC CHAN|griffin||290 Coggins Road   gate1964||la honda|CA|94020|94020|US&#xA;JEROME|KUMAMOTO||1326 EGRET DR||SUNNYVALE|CA|94087|94087|US&#xA;JASON|LEE||23 POWERS AVE||SAN FRANCISCO|CA|941104616|94110|US&#xA;BRYAN|Thione||4533 18th Street|Apt. 2|San Francisco|CA|94114|94114|US&#xA;GREGORY|McDermott||1301 Saddlehill Lane||Concord|CA|94521|94521|US&#xA;Keoni|HERBERT||11 BONNIE PLACE||PLEASANT HILL|CA|94523|94523|US&#xA;DENISE|Perez||10300 San Pablo Ave.||El Cerrito|CA|94530|94530|US&#xA;Stephen|Prachyaratanav|G|10300 SAN PABLO AVE||EL CERRITO|CA|94530|94530|US&#xA;Denise|Prachyaratanav - Perez||10300 San Pablo Avenue||El Cerrito|CA|94530|94530|US&#xA;ANNE|WILSON|M|731 MAGNOLIA CT.||FAIRFIELD|CA|94533|94533|US&#xA;LAWRENCE|HARRINGTON||6024 HANSEN DR||PLEASANTON|CA|945665725|94566|US&#xA;Daniel|SAMUELS||4170 MAYNARD AVE||OAKLAND|CA|946053120|94605|US&#xA;CHET|SMITH|R|2400 PARK BLVD.||OAKLAND|CA|94606|94606|US&#xA;robert|DI COSTANZO|A|1078 NEILSON ST||ALBANY|CA|947062427|94706|US&#xA;JEFFREY|LARRENAGA|A|14567 EASTVIEW DR.||LO GATOS|CA|95032|95032|US&#xA;DANIEL|RUIZ|S|1138 PARK GLEN CT||MILPITAS|CA|95035|95035|US&#xA;REY|Duncan||733 Park Court||Santa Clara|CA|95050|95050|US&#xA;Darcie|RODRIGUEZ||1120 NOTTINGHAM PL||SAN JOSE|CA|951172703|95117|US&#xA;MIKE|FRANCIS|A|3483 QUARRY PARK DR||SAN JOSE|CA|951363918|95136|US&#xA;KEVIN|HENDRICKS|L|1120 CAPITOL EXPRESSWAY||SAN JOSE|CA|95136|95136|US&#xA;J|MARSON||1711 COVENTRY WAY||LODI|CA|952407834|95240|US&#xA;Blair|VANGORKUM|J|1707 CHIANTI CT.||ESCALON|CA|95320|95320|US&#xA;R. F.|Eidschun||6001 Woodland Ave||Modesto|CA|95358|95358|US&#xA;JASON|LEVY||1119 PEDRAS RD||TURLOCK|CA|95380|95380|US&#xA;BEN|VILLANUEVA|R|1191 EARDLEY AVE.||SANTA ROSA|CA|95401|95401|US&#xA;Weston|BAUER|J|5686 EAGLE ROCK COURT||SANTA ROSA|CA|95409|95409|US&#xA;ROBERT|DAVIS|A|23218 SUNSET RIDGE DR||AUBURN|CA|956028091|95602|US&#xA;joseph|Jones||8818 Starfall Way||Elk Grove|CA|95624|95624|US&#xA;WILLIAM|BARNES||109 LITTLE CT||FOLSOM|CA|956302055|95630|US&#xA;CARL|TEAGLE||23416 FORTRESS WAY||PIONEER|CA|95666|95666|US&#xA;Ernest|MOSLEY||2996 REDWOOD AVE||W SACRAMENTO|CA|956915120|95691|US&#xA;William|BARTH||2900 OLD OAK TREE WAY||ROCKLIN|CA|95765|95765|US&#xA;a|ZEBOSKI|C|5819 21ST AVENUE||SACRAMENTO|CA|95820|95820|US&#xA;TOM|BROOKS||293 WILDWOOD RD||ARBUCKLE|CA|959129722|95912|US&#xA;LEVON|HANSEN|F|37 NICOLE LN||CHICO|CA|959261664|95926|US&#xA;Lauren|HARRIS|F|W. 6TH ST||CHICO|CA|95928|95928|US&#xA;RON|CROW||PO BOX 429||FORT JONES|CA|96032|96032|US&#xA;stephen|Chang||94-555 Makohilani St|Unit 1053|Mililani|HI|96789|96789|US&#xA;Carol|SWOFFORD||8615 SW MAVERICK TER|APT 409|BEAVERTON|OR|970087436|97008|US&#xA;MICHAEL|GARCIA||4110 POST CANYON DR||HOOD RIVER|OR|970317723|97031|US&#xA;Yu-Ting,|Acker||61432 Fays Lane||St. Helens|OR|97051|97051|US&#xA;DAVID|RHEAUME||2328 APPALOOSA WAY||WEST LINN|OR|97068|97068|US&#xA;BRIAN|tolan||15780 nw harry's place||Banks|OR|97106|97106|US&#xA;JASON|LAVANH||9820 N MIDWAY AVE||PORTLAND|OR|972031839|97203|US&#xA;JENNY|LANDRUM||1818 NE.17TH AVE.||PORTLAND|OR|97212|97212|US&#xA;JERRY|KOZENEK||5523 N DETROIT AVE.||PORTLAND|OR|97217|97217|US&#xA;GREG|MCGRATH|L|14587 SW 148TH PL.||TIGARD|OR|97224|97224|US&#xA;LUCY|HAGEMAN|A|561 FANNY WAY NE||SALEM|OR|97301|97301|US&#xA;SCOTT|COFFELT JR||UNIT 124 310 NE KINGS VALLEY|HWY|DALLAS|OR|973389767|97338|US&#xA;Tyler|BENSON||800 RUBY AVE||EUGENE|OR|97404|97404|US&#xA;NICHOLAS|FARVER||93080 LARSON LN||JUNCTION CITY|OR|974489459|97448|US&#xA;Phyllis|EPLETT||720 BENNETT AVE||MEDFORD|OR|97504|97504|US&#xA;tomas|BOOS||5701 158TH ST SW||EDMONDS|WA|98026|98026|US&#xA;Destiny-Entertai|Payne||11852 SE 227th Pl||Kent|WA|98031|98031|US&#xA;BOB|Vance||5505 170th Pl Sw||Lynnwood|WA|98037|98037|US&#xA;MARK|GREENWOOD||19934 NE UNION HILL RD||REDMOND|WA|98053|98053|US&#xA;maria|GRIER|C|18215 159TH AVE NE||WOODINVILLE|WA|98072|98072|US&#xA;ROBERT|DENULLI||3902 SW 98TH ST||SEATTLE|WA|981362835|98136|US&#xA;Philippe|ERICKSON|L|1461 SW 152ND ST||SEATTLE|WA|981661716|98166|US&#xA;RUSSELL|COX||4214 S 148TH ST||TUKWILA|WA|98168|98168|US&#xA;Bud|THAYER||1871 MADRONA WAY||COUPEVILLE|WA|982393022|98239|US&#xA;DAVID|ROBERTS|L|11003 VILLA MONTE DR||MUKILTEO|WA|982754884|98275|US&#xA;JEFF|LARSON||9222 168TH ST SE||SNOHOMISH|WA|982968053|98296|US&#xA;RICHARD|DOTUR|S|14819 80TH AVE. E.||PUYALLUP|WA|98375|98375|US&#xA;RYAN|CORNEJO||16619 41ST ST E||BONNEY LAKE|WA|98391|98391|US&#xA;Hair|MC ELROY|O|12204 LITTLEROCK RD SW||OLYMPIA|WA|985129237|98512|US&#xA;MARK|GRAHAM||9518 W NELSON DR||NINE MILE FALLS|WA|99026|99026|US&#xA;Donna|OTERO|L|7941 ASCOT ST||ANCHORAGE|AK|99502|99502|US&#xA;Gloria|McMahon||19 The Mall|Ealing|London|PA|W5 2PJ|W5 2P|GB&#xA;CARROL|Surdi||||Somers|NY|105891316|10589|US&#xA;"/>
+    <elementParameter field="TEXT" name="LABEL" value="customer_list"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="8" name="FNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="14" name="LNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="1" name="MNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="28" name="CUST_ADDR1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="29" name="CUST_ADDR2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="14" name="CUST_ADDR3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_ST" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="9" name="ZIP_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="5" name="ZIP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_CNTRY_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+    </metadata>
+  </node>
+  <node componentName="tSynonymSearch" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSynonymSearch_1"/>
+    <elementParameter field="CHECK" name="STORE_IN_MEMORY" value="false"/>
+    <elementParameter field="TEXT" name="LIMIT" value="1"/>
+    <elementParameter field="TABLE" name="SEARCH_INDEXS">
+      <elementValue elementRef="PRE_COLUMN" value="FNAME"/>
+      <elementValue elementRef="COLUMN" value="std_fname"/>
+      <elementValue elementRef="INDEX_PATH" value="&quot;./addons/data/synonym/idx_people/firstname_nicknames/&quot;"/>
+      <elementValue elementRef="NUM_TOPS" value="1"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="std_firstname"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tSynonymSearch_1">
+      <column comment="" key="false" length="8" name="FNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="14" name="LNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="1" name="MNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="28" name="CUST_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_ST" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="9" name="ZIP_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="5" name="ZIP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_CNTRY_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" name="std_fname" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Integer"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer"/>
+      <column defaultValue="" key="false" length="0" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Float"/>
+      <column defaultValue="" key="false" length="255" name="SCORES" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column defaultValue="" key="false" length="0" name="NB_MATCHED_FIELDS" nullable="true" precision="0" sourceType="" type="id_Integer"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="8" name="FNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="14" name="LNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="1" name="MNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="28" name="CUST_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_ST" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="9" name="ZIP_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="5" name="ZIP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_CNTRY_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" name="std_fname" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Integer"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer"/>
+      <column defaultValue="" key="false" length="0" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Float"/>
+      <column key="false" length="255" name="SCORES" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column defaultValue="" key="false" length="0" name="NB_MATCHED_FIELDS" nullable="true" precision="0" sourceType="" type="id_Integer"/>
+      <column defaultValue="" key="false" length="255" name="error_message" nullable="true" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node componentName="tGoogleAddressRow" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="704" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tGoogleAddressRow_1"/>
+    <elementParameter field="TEXT" name="PAUSE" value="1"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="ADDRESS_COLUMN" value="CUST_ADDR"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="cleanse_address"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tGoogleAddressRow_1">
+      <column comment="" key="false" length="8" name="FNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="14" name="LNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="1" name="MNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="28" name="CUST_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_ST" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="9" name="ZIP_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="5" name="ZIP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_CNTRY_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" name="std_fname" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="not just postal addresses, but any way to geographically name a location" key="false" length="0" name="formatted_address" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short street number" key="false" length="0" name="street_number_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long street number" key="false" length="0" name="street_number_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short route" key="false" length="0" name="route_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long route" key="false" length="0" name="route_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short locality" key="false" length="0" name="locality_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long locality" key="false" length="0" name="locality_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short sub locality" key="false" length="0" name="sublocality_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long sub locality" key="false" length="0" name="sublocality_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 1" key="false" length="0" name="adm_area1_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 1" key="false" length="0" name="adm_area1_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 2" key="false" length="0" name="adm_area2_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 2" key="false" length="0" name="adm_area2_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 3" key="false" length="0" name="adm_area3_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 3" key="false" length="0" name="adm_area3_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short country name" key="false" length="0" name="country_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long country name" key="false" length="0" name="country_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short postal code" key="false" length="0" name="postal_code_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long postal code" key="false" length="0" name="postal_code_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="location type" key="false" length="0" name="location_type" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="partial match type" key="false" length="0" name="partial_match" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="latitude" defaultValue="" key="false" length="20" name="lat" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="longitude" defaultValue="" key="false" length="20" name="lng" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="status" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_tQFz8PNBEeC8SvS5Rk98Sg-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="TEXT" name="LABEL" value="merge_address_fields"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" label="customer" name="customer">
+      <column comment="" key="false" length="8" name="FNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="14" name="LNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="1" name="MNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="28" name="CUST_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_ST" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="9" name="ZIP_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="5" name="ZIP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_CNTRY_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+    </metadata>
+    <nodeData xsi:type="MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="customer">
+        <mapperTableEntries name="FNAME" expression="row1.FNAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LNAME" expression="row1.LNAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MNAME" expression="row1.MNAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CUST_ADDR" expression="DqStringHandling.safeConcatMerge(',', row1.CUST_ADDR1, row1.CUST_ADDR2, row1.CUST_ADDR3,row1.ZIP)  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CUST_ST" expression="row1.CUST_ST" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZIP_4" expression="row1.ZIP_4" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZIP" expression="row1.ZIP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CUST_CNTRY_CD" expression="row1.CUST_CNTRY_CD" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="FNAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LNAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MNAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CUST_ADDR1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CUST_ADDR2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CUST_ADDR3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CUST_ST" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZIP_4" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZIP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CUST_CNTRY_CD" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFilterColumns" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterColumns_3"/>
+    <elementParameter field="TEXT" name="LABEL" value="remove_scores"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tFilterColumns_3">
+      <column comment="" key="false" length="8" name="FNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="14" name="LNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="1" name="MNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="28" name="CUST_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_ST" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="9" name="ZIP_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="5" name="ZIP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_CNTRY_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" name="std_fname" nullable="true" pattern="" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node componentName="tMatchGroup" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMatchGroup_1"/>
+    <elementParameter field="TABLE" name="JOIN_KEY">
+      <elementValue elementRef="INPUT_COLUMN" value="FNAME"/>
+      <elementValue elementRef="MATCHING_TYPE" value="Jaro-Winkler"/>
+      <elementValue elementRef="CUSTOM_MATCHER" value="&quot;&quot;"/>
+      <elementValue elementRef="CONFIDENCE_WEIGHT" value="1"/>
+      <elementValue elementRef="HANDLE_NULL" value="nullMatchNull"/>
+      <elementValue elementRef="INPUT_COLUMN" value="formatted_address"/>
+      <elementValue elementRef="MATCHING_TYPE" value="q-grams"/>
+      <elementValue elementRef="CUSTOM_MATCHER" value="&quot;&quot;"/>
+      <elementValue elementRef="CONFIDENCE_WEIGHT" value="1"/>
+      <elementValue elementRef="HANDLE_NULL" value="nullMatchNull"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="BLOCKING_DEFINITION"/>
+    <elementParameter field="CHECK" name="STORE_ON_DISK" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="200000"/>
+    <elementParameter field="DIRECTORY" name="TMP_DIRECTORY" value="&quot;/home/scorreia/DEMOS/Talend-5.0.0M5/studio/Talend-All-r69141-V5.0.0M5/workspace&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="MATCHING_ALGORITHM" value="Simple VSR Matcher"/>
+    <elementParameter field="TEXT" name="INTERVAL" value="0.85"/>
+    <elementParameter field="CHECK" name="SORT_DATA" value="true"/>
+    <elementParameter field="CHECK" name="OUTPUTDD" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="group_similar"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <elementParameter field="CHECK" name="GID_USE_STRING" value="false"/>
+    <elementParameter field="CHECK" name="COMPUTE_GRP_QUALITY" value="false"/>
+    <metadata connector="FLOW" name="tMatchGroup_1">
+      <column comment="" key="false" length="8" name="FNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="14" name="LNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="1" name="MNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="28" name="CUST_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_ST" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="9" name="ZIP_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="5" name="ZIP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_CNTRY_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" name="std_fname" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="not just postal addresses, but any way to geographically name a location" key="false" length="0" name="formatted_address" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short street number" key="false" length="0" name="street_number_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long street number" key="false" length="0" name="street_number_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short route" key="false" length="0" name="route_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long route" key="false" length="0" name="route_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short locality" key="false" length="0" name="locality_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long locality" key="false" length="0" name="locality_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short sub locality" key="false" length="0" name="sublocality_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long sub locality" key="false" length="0" name="sublocality_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 1" key="false" length="0" name="adm_area1_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 1" key="false" length="0" name="adm_area1_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 2" key="false" length="0" name="adm_area2_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 2" key="false" length="0" name="adm_area2_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 3" key="false" length="0" name="adm_area3_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 3" key="false" length="0" name="adm_area3_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short country name" key="false" length="0" name="country_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long country name" key="false" length="0" name="country_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short postal code" key="false" length="0" name="postal_code_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long postal code" key="false" length="0" name="postal_code_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="location type" key="false" length="0" name="location_type" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="partial match type" key="false" length="0" name="partial_match" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="latitude" defaultValue="" key="false" length="20" name="lat" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="longitude" defaultValue="" key="false" length="20" name="lng" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="status" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer"/>
+      <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean"/>
+      <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double"/>
+    </metadata>
+  </node>
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_7"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="GRP_SIZE"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+    <elementParameter field="TEXT" name="LABEL" value="filter_duplicates"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tFilterRow_7">
+      <column comment="" key="false" length="8" name="FNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="14" name="LNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="1" name="MNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="28" name="CUST_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_ST" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="9" name="ZIP_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="5" name="ZIP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_CNTRY_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" name="std_fname" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="not just postal addresses, but any way to geographically name a location" key="false" length="0" name="formatted_address" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short street number" key="false" length="0" name="street_number_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long street number" key="false" length="0" name="street_number_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short route" key="false" length="0" name="route_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long route" key="false" length="0" name="route_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short locality" key="false" length="0" name="locality_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long locality" key="false" length="0" name="locality_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short sub locality" key="false" length="0" name="sublocality_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long sub locality" key="false" length="0" name="sublocality_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 1" key="false" length="0" name="adm_area1_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 1" key="false" length="0" name="adm_area1_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 2" key="false" length="0" name="adm_area2_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 2" key="false" length="0" name="adm_area2_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 3" key="false" length="0" name="adm_area3_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 3" key="false" length="0" name="adm_area3_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short country name" key="false" length="0" name="country_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long country name" key="false" length="0" name="country_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short postal code" key="false" length="0" name="postal_code_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long postal code" key="false" length="0" name="postal_code_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="location type" key="false" length="0" name="location_type" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="partial match type" key="false" length="0" name="partial_match" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="latitude" defaultValue="" key="false" length="20" name="lat" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="longitude" defaultValue="" key="false" length="20" name="lng" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="status" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer"/>
+      <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean"/>
+      <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double"/>
+    </metadata>
+    <metadata connector="FILTER" name="FILTER">
+      <column comment="" key="false" length="8" name="FNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="14" name="LNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="1" name="MNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="28" name="CUST_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_ST" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="9" name="ZIP_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="5" name="ZIP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_CNTRY_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" name="std_fname" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="not just postal addresses, but any way to geographically name a location" key="false" length="0" name="formatted_address" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short street number" key="false" length="0" name="street_number_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long street number" key="false" length="0" name="street_number_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short route" key="false" length="0" name="route_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long route" key="false" length="0" name="route_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short locality" key="false" length="0" name="locality_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long locality" key="false" length="0" name="locality_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short sub locality" key="false" length="0" name="sublocality_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long sub locality" key="false" length="0" name="sublocality_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 1" key="false" length="0" name="adm_area1_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 1" key="false" length="0" name="adm_area1_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 2" key="false" length="0" name="adm_area2_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 2" key="false" length="0" name="adm_area2_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 3" key="false" length="0" name="adm_area3_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 3" key="false" length="0" name="adm_area3_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short country name" key="false" length="0" name="country_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long country name" key="false" length="0" name="country_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short postal code" key="false" length="0" name="postal_code_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long postal code" key="false" length="0" name="postal_code_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="location type" key="false" length="0" name="location_type" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="partial match type" key="false" length="0" name="partial_match" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="latitude" defaultValue="" key="false" length="20" name="lat" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="longitude" defaultValue="" key="false" length="20" name="lng" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="status" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer"/>
+      <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean"/>
+      <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="8" name="FNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="14" name="LNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="1" name="MNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="28" name="CUST_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_ST" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="9" name="ZIP_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="5" name="ZIP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_CNTRY_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" name="std_fname" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="not just postal addresses, but any way to geographically name a location" key="false" length="0" name="formatted_address" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short street number" key="false" length="0" name="street_number_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long street number" key="false" length="0" name="street_number_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short route" key="false" length="0" name="route_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long route" key="false" length="0" name="route_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short locality" key="false" length="0" name="locality_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long locality" key="false" length="0" name="locality_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short sub locality" key="false" length="0" name="sublocality_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long sub locality" key="false" length="0" name="sublocality_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 1" key="false" length="0" name="adm_area1_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 1" key="false" length="0" name="adm_area1_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 2" key="false" length="0" name="adm_area2_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 2" key="false" length="0" name="adm_area2_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 3" key="false" length="0" name="adm_area3_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 3" key="false" length="0" name="adm_area3_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short country name" key="false" length="0" name="country_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long country name" key="false" length="0" name="country_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short postal code" key="false" length="0" name="postal_code_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long postal code" key="false" length="0" name="postal_code_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="location type" key="false" length="0" name="location_type" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="partial match type" key="false" length="0" name="partial_match" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="latitude" defaultValue="" key="false" length="20" name="lat" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="longitude" defaultValue="" key="false" length="20" name="lng" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="status" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer"/>
+      <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean"/>
+      <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_11"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="status"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="&quot;OK&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="street_number_short"/>
+      <elementValue elementRef="FUNCTION" value="$source == null? false : $source.length() $operator $target"/>
+      <elementValue elementRef="OPERATOR" value="!="/>
+      <elementValue elementRef="RVALUE" value="0"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+    <elementParameter field="TEXT" name="LABEL" value="filter_incomplete"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tFilterRow_11">
+      <column comment="" key="false" length="8" name="FNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="14" name="LNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="1" name="MNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="28" name="CUST_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_ST" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="9" name="ZIP_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="5" name="ZIP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_CNTRY_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" name="std_fname" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="not just postal addresses, but any way to geographically name a location" key="false" length="0" name="formatted_address" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short street number" key="false" length="0" name="street_number_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long street number" key="false" length="0" name="street_number_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short route" key="false" length="0" name="route_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long route" key="false" length="0" name="route_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short locality" key="false" length="0" name="locality_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long locality" key="false" length="0" name="locality_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short sub locality" key="false" length="0" name="sublocality_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long sub locality" key="false" length="0" name="sublocality_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 1" key="false" length="0" name="adm_area1_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 1" key="false" length="0" name="adm_area1_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 2" key="false" length="0" name="adm_area2_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 2" key="false" length="0" name="adm_area2_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 3" key="false" length="0" name="adm_area3_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 3" key="false" length="0" name="adm_area3_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short country name" key="false" length="0" name="country_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long country name" key="false" length="0" name="country_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short postal code" key="false" length="0" name="postal_code_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long postal code" key="false" length="0" name="postal_code_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="location type" key="false" length="0" name="location_type" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="partial match type" key="false" length="0" name="partial_match" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="latitude" defaultValue="" key="false" length="20" name="lat" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="longitude" defaultValue="" key="false" length="20" name="lng" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="status" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer"/>
+      <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean"/>
+      <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double"/>
+    </metadata>
+    <metadata connector="FILTER" name="FILTER">
+      <column comment="" key="false" length="8" name="FNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="14" name="LNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="1" name="MNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="28" name="CUST_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_ST" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="9" name="ZIP_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="5" name="ZIP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_CNTRY_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" name="std_fname" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="not just postal addresses, but any way to geographically name a location" key="false" length="0" name="formatted_address" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short street number" key="false" length="0" name="street_number_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long street number" key="false" length="0" name="street_number_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short route" key="false" length="0" name="route_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long route" key="false" length="0" name="route_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short locality" key="false" length="0" name="locality_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long locality" key="false" length="0" name="locality_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short sub locality" key="false" length="0" name="sublocality_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long sub locality" key="false" length="0" name="sublocality_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 1" key="false" length="0" name="adm_area1_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 1" key="false" length="0" name="adm_area1_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 2" key="false" length="0" name="adm_area2_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 2" key="false" length="0" name="adm_area2_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 3" key="false" length="0" name="adm_area3_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 3" key="false" length="0" name="adm_area3_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short country name" key="false" length="0" name="country_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long country name" key="false" length="0" name="country_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short postal code" key="false" length="0" name="postal_code_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long postal code" key="false" length="0" name="postal_code_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="location type" key="false" length="0" name="location_type" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="partial match type" key="false" length="0" name="partial_match" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="latitude" defaultValue="" key="false" length="20" name="lat" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="longitude" defaultValue="" key="false" length="20" name="lng" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="status" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer"/>
+      <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean"/>
+      <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="8" name="FNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="14" name="LNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="1" name="MNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="28" name="CUST_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_ST" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="9" name="ZIP_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="5" name="ZIP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_CNTRY_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" name="std_fname" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="not just postal addresses, but any way to geographically name a location" key="false" length="0" name="formatted_address" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short street number" key="false" length="0" name="street_number_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long street number" key="false" length="0" name="street_number_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short route" key="false" length="0" name="route_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long route" key="false" length="0" name="route_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short locality" key="false" length="0" name="locality_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long locality" key="false" length="0" name="locality_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short sub locality" key="false" length="0" name="sublocality_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long sub locality" key="false" length="0" name="sublocality_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 1" key="false" length="0" name="adm_area1_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 1" key="false" length="0" name="adm_area1_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 2" key="false" length="0" name="adm_area2_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 2" key="false" length="0" name="adm_area2_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 3" key="false" length="0" name="adm_area3_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 3" key="false" length="0" name="adm_area3_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short country name" key="false" length="0" name="country_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long country name" key="false" length="0" name="country_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short postal code" key="false" length="0" name="postal_code_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long postal code" key="false" length="0" name="postal_code_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="location type" key="false" length="0" name="location_type" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="partial match type" key="false" length="0" name="partial_match" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="latitude" defaultValue="" key="false" length="20" name="lat" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="longitude" defaultValue="" key="false" length="20" name="lng" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="status" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer"/>
+      <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean"/>
+      <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node componentName="tFilterColumns" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1408" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterColumns_2"/>
+    <elementParameter field="TEXT" name="LABEL" value="keep_std_address"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tFilterColumns_2">
+      <column comment="" key="false" length="8" name="FNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="14" name="LNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="1" name="MNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="not just postal addresses, but any way to geographically name a location" key="false" length="0" name="formatted_address" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="latitude" defaultValue="" key="false" length="20" name="lat" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="longitude" defaultValue="" key="false" length="20" name="lng" nullable="true" precision="0" sourceType="" type="id_Double"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1568" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="FNAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LNAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MNAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="formatted_address"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lat"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lng"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="clean_customers"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="false"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="8" name="FNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="14" name="LNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="1" name="MNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="not just postal addresses, but any way to geographically name a location" key="false" length="0" name="formatted_address" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="latitude" defaultValue="" key="false" length="20" name="lat" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="longitude" defaultValue="" key="false" length="20" name="lng" nullable="true" precision="0" sourceType="" type="id_Double"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;./tocheck.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="incomplete"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="8" name="FNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="14" name="LNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="1" name="MNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="28" name="CUST_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_ST" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="9" name="ZIP_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="5" name="ZIP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_CNTRY_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" name="std_fname" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="not just postal addresses, but any way to geographically name a location" key="false" length="0" name="formatted_address" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short street number" key="false" length="0" name="street_number_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long street number" key="false" length="0" name="street_number_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short route" key="false" length="0" name="route_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long route" key="false" length="0" name="route_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short locality" key="false" length="0" name="locality_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long locality" key="false" length="0" name="locality_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short sub locality" key="false" length="0" name="sublocality_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long sub locality" key="false" length="0" name="sublocality_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 1" key="false" length="0" name="adm_area1_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 1" key="false" length="0" name="adm_area1_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 2" key="false" length="0" name="adm_area2_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 2" key="false" length="0" name="adm_area2_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 3" key="false" length="0" name="adm_area3_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 3" key="false" length="0" name="adm_area3_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short country name" key="false" length="0" name="country_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long country name" key="false" length="0" name="country_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short postal code" key="false" length="0" name="postal_code_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long postal code" key="false" length="0" name="postal_code_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="location type" key="false" length="0" name="location_type" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="partial match type" key="false" length="0" name="partial_match" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="latitude" defaultValue="" key="false" length="20" name="lat" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="longitude" defaultValue="" key="false" length="20" name="lng" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="status" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer"/>
+      <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean"/>
+      <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_2"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;./similar.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="duplicates"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_2">
+      <column comment="" key="false" length="8" name="FNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="14" name="LNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="1" name="MNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="28" name="CUST_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_ST" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="9" name="ZIP_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="5" name="ZIP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" length="2" name="CUST_CNTRY_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String"/>
+      <column comment="" key="false" name="std_fname" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="not just postal addresses, but any way to geographically name a location" key="false" length="0" name="formatted_address" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short street number" key="false" length="0" name="street_number_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long street number" key="false" length="0" name="street_number_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short route" key="false" length="0" name="route_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long route" key="false" length="0" name="route_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short locality" key="false" length="0" name="locality_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long locality" key="false" length="0" name="locality_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short sub locality" key="false" length="0" name="sublocality_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long sub locality" key="false" length="0" name="sublocality_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 1" key="false" length="0" name="adm_area1_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 1" key="false" length="0" name="adm_area1_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 2" key="false" length="0" name="adm_area2_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 2" key="false" length="0" name="adm_area2_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short admin area level 3" key="false" length="0" name="adm_area3_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long admin area level 3" key="false" length="0" name="adm_area3_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short country name" key="false" length="0" name="country_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long country name" key="false" length="0" name="country_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="short postal code" key="false" length="0" name="postal_code_short" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="long postal code" key="false" length="0" name="postal_code_long" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="location type" key="false" length="0" name="location_type" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="partial match type" key="false" length="0" name="partial_match" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column comment="latitude" defaultValue="" key="false" length="20" name="lat" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="longitude" defaultValue="" key="false" length="20" name="lng" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column comment="status" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_Long"/>
+      <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer"/>
+      <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean"/>
+      <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double"/>
+      <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="FNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ADDR1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ADDR2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ADDR3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZIP_4"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZIP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_CNTRY_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tSynonymSearch_1" offsetLabelX="0" offsetLabelY="0" source="tSynonymSearch_1" target="tFilterColumns_3">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="FNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ADDR1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ADDR2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ADDR3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZIP_4"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZIP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_CNTRY_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="std_fname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="street_type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GRP_SIZE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SCORE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SCORES"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NB_MATCHED_FIELDS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ADDR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tGoogleAddressRow_1" offsetLabelX="0" offsetLabelY="0" source="tGoogleAddressRow_1" target="tMatchGroup_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="FNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ADDR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZIP_4"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZIP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_CNTRY_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="std_fname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="formatted_address"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="street_number_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="street_number_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="route_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="route_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="locality_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="locality_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sublocality_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sublocality_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area1_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area1_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area2_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area2_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area3_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area3_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="country_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="country_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="postal_code_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="postal_code_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="location_type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="partial_match"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lng"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <connection connectorName="FLOW" label="customer" lineStyle="0" metaname="customer" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tSynonymSearch_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER"/>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="customer"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tFilterColumns_3" offsetLabelX="0" offsetLabelY="0" source="tFilterColumns_3" target="tGoogleAddressRow_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="MNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZIP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_CNTRY_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="std_fname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ADDR1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ADDR2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ADDR3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZIP_4"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ADDR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tMatchGroup_1" offsetLabelX="0" offsetLabelY="0" source="tMatchGroup_1" target="tFilterRow_7">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="FNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ADDR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZIP_4"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZIP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_CNTRY_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="std_fname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="formatted_address"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="street_number_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="street_number_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="route_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="route_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="locality_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="locality_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sublocality_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sublocality_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area1_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area1_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area2_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area2_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area3_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area3_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="country_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="country_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="postal_code_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="postal_code_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="location_type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="partial_match"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lng"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GRP_SIZE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MASTER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SCORE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <connection connectorName="FILTER" label="row6" lineStyle="0" metaname="tFilterRow_7" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFilterRow_7" target="tFilterRow_11">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="FNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ADDR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZIP_4"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZIP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_CNTRY_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="std_fname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="formatted_address"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="street_number_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="street_number_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="route_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="route_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="locality_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="locality_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sublocality_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sublocality_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area1_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area1_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area2_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area2_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area3_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area3_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="country_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="country_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="postal_code_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="postal_code_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="location_type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="partial_match"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lng"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GRP_SIZE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MASTER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SCORE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <connection connectorName="REJECT" label="row7" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFilterRow_7" target="tFileOutputDelimited_2">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="FNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ADDR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZIP_4"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZIP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_CNTRY_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="std_fname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="formatted_address"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="street_number_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="street_number_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="route_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="route_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="locality_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="locality_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sublocality_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sublocality_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area1_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area1_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area2_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area2_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area3_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area3_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="country_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="country_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="postal_code_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="postal_code_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="location_type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="partial_match"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lng"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GRP_SIZE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MASTER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SCORE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="errorMessage"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <connection connectorName="FILTER" label="row8" lineStyle="0" metaname="FILTER" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFilterRow_11" target="tFilterColumns_2">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="FNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ADDR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZIP_4"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZIP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_CNTRY_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="std_fname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="formatted_address"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="street_number_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="street_number_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="route_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="route_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="locality_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="locality_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sublocality_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sublocality_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area1_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area1_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area2_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area2_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area3_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area3_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="country_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="country_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="postal_code_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="postal_code_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="location_type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="partial_match"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lng"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GRP_SIZE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MASTER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SCORE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <connection connectorName="REJECT" label="row9" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFilterRow_11" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="FNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ADDR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_ST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZIP_4"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ZIP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUST_CNTRY_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="std_fname"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="formatted_address"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="street_number_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="street_number_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="route_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="route_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="locality_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="locality_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sublocality_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sublocality_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area1_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area1_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area2_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area2_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area3_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="adm_area3_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="country_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="country_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="postal_code_short"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="postal_code_long"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="location_type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="partial_match"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lng"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GRP_SIZE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MASTER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SCORE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="errorMessage"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tFilterColumns_2" offsetLabelX="0" offsetLabelY="0" source="tFilterColumns_2" target="tLogRow_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="FNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="formatted_address"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lng"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row10"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <note opaque="true" posX="320" posY="32" sizeHeight="129" sizeWidth="705" text="This job uses a tSynonymSearch component to standardize the first names and &#xA;tGoogleAddressRow to standardize the address before grouping similar records &#xA;(based on the standardized fields).&#xA;&#xA;Then the potential duplicates are put in a file.&#xA;The incomplete records (those without a street number) are put in another file&#xA;And the complete records are just output in the console&#xA;">
+    <elementParameter field="COLOR" name="NOTE_COLOR" value="255;255;203"/>
+    <elementParameter field="COLOR" name="NOTETXT_COLOR" value="0;0;0"/>
+    <elementParameter field="RADIO" name="NOTETXT_LEFT" value="false"/>
+    <elementParameter field="RADIO" name="NOTETXT_RIGHT" value="false"/>
+    <elementParameter field="RADIO" name="NOTETXT_CENTER" value="true"/>
+    <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="true"/>
+    <elementParameter field="RADIO" name="NOTETXT_TOP" value="false"/>
+    <elementParameter field="RADIO" name="NOTETXT_BOTTOM" value="false"/>
+    <elementParameter field="TEXT" name="NOTE_FONT" value="Time New Roman"/>
+    <elementParameter field="TEXT" name="FONT_SIZE" value="10"/>
+    <elementParameter field="CHECK" name="FONT_BOLD" value="false"/>
+    <elementParameter field="CHECK" name="FONT_ITALIC" value="false"/>
+    <elementParameter field="COLOR" name="NOTE_LINECOLOR" value="237;201;122"/>
+  </note>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+</talendfile:ProcessType>
