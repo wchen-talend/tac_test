@@ -1,0 +1,4 @@
+country;ISO2_country;phone;standardizedPhoneNumber;isValidPhoneNumber;isPossiblePhoneNumber;isAlreadyStandard;phoneNumberType;errorMessage
+USA;US;+1 262-287-7144;+1 262-287-7144;true;true;false;FIXED_LINE_OR_MOBILE;
+German;DE;+49 172 6627334;+49 172 6627334;true;true;false;MOBILE;
+German;DE;+49 491 726627334;+49 491 726627334;true;true;false;FIXED_LINE;

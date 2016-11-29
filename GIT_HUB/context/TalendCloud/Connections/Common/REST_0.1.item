@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_3Qs9Q7XdEeaht_7CegINcw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_3Qs9RLXdEeaht_7CegINcw" comment="" name="connection_restclient_url" prompt="connection_restclient_url?" promptNeeded="true" type="id_String" value=""/>
+  <contextParameter xmi:id="_3Qs9RbXdEeaht_7CegINcw" comment="" name="connection_restclient_relative_path" prompt="connection_restclient_relative_path?" promptNeeded="true" type="id_String" value=""/>
+  <contextParameter xmi:id="_3Qs9RrXdEeaht_7CegINcw" comment="" name="connection_restclient_auth_username" prompt="connection_restclient_auth_username?" promptNeeded="true" type="id_String" value=""/>
+  <contextParameter xmi:id="_3Qs9R7XdEeaht_7CegINcw" comment="" name="connection_restclient_auth_password" prompt="connection_restclient_auth_password?" promptNeeded="true" type="id_String" value=""/>
+</talendfile:ContextType>

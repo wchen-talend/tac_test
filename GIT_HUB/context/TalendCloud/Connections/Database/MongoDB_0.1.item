@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_3Rp_hrXdEeaht_7CegINcw" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_3Rp_h7XdEeaht_7CegINcw" comment="" name="connection_mongodb_server" prompt="connection_mongodb_server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_3Rp_iLXdEeaht_7CegINcw" comment="" name="connection_mongodb_port" prompt="connection_mongodb_port?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_3Rp_ibXdEeaht_7CegINcw" comment="" name="connection_mongodb_database" prompt="connection_mongodb_database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_3Rp_irXdEeaht_7CegINcw" comment="" name="connection_mongodb_username" prompt="connection_mongodb_username?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_3Rp_i7XdEeaht_7CegINcw" comment="" name="connection_mongodb_password" prompt="connection_mongodb_password?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_3Rp_jLXdEeaht_7CegINcw" confirmationNeeded="false" name="Studio">
+    <contextParameter xmi:id="_3Rp_jbXdEeaht_7CegINcw" comment="" name="connection_mongodb_server" prompt="connection_mongodb_server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_3Rp_jrXdEeaht_7CegINcw" comment="" name="connection_mongodb_port" prompt="connection_mongodb_port?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_3Rp_j7XdEeaht_7CegINcw" comment="" name="connection_mongodb_database" prompt="connection_mongodb_database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_3Rp_kLXdEeaht_7CegINcw" comment="" name="connection_mongodb_username" prompt="connection_mongodb_username?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_3Rp_kbXdEeaht_7CegINcw" comment="" name="connection_mongodb_password" prompt="connection_mongodb_password?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

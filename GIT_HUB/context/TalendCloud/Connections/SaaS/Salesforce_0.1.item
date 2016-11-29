@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_3SnBwLXdEeaht_7CegINcw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_3SnBwbXdEeaht_7CegINcw" comment="" name="connection_salesforce_authentication_type" prompt="connection_salesforce_authentication_type?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3SnBwrXdEeaht_7CegINcw" comment="" name="connection_salesforce_basic_username" prompt="connection_salesforce_basic_username?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3SnBw7XdEeaht_7CegINcw" comment="" name="connection_salesforce_basic_password" prompt="connection_salesforce_basic_password?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3SnBxLXdEeaht_7CegINcw" comment="" name="connection_salesforce_oauth_consumer_key" prompt="connection_salesforce_oauth_consumer_key?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3SnBxbXdEeaht_7CegINcw" comment="" name="connection_salesforce_oauth_consumer_secret" prompt="connection_salesforce_oauth_consumer_secret?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3SnBxrXdEeaht_7CegINcw" comment="" name="connection_salesforce_oauth_callback_host" prompt="connection_salesforce_oauth_callback_host?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3SnBx7XdEeaht_7CegINcw" comment="" name="connection_salesforce_oauth_callback_port" prompt="connection_salesforce_oauth_callback_port?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3SnByLXdEeaht_7CegINcw" comment="" name="connection_salesforce_oauth_token_file" prompt="connection_salesforce_oauth_token_file?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3SnBybXdEeaht_7CegINcw" comment="" name="connection_salesforce_basic_security_token" prompt="connection_salesforce_basic_security_token?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3SnByrXdEeaht_7CegINcw" comment="" name="connection_salesforce_connection_timeout" prompt="connection_salesforce_connection_timeout?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

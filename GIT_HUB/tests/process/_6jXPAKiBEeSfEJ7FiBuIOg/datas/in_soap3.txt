@@ -1,0 +1,3 @@
+Minsk;Belarus
+Moscow;Russia
+Russia;Moscow

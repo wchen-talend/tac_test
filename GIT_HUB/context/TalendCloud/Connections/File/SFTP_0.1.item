@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_3Sa0gLXdEeaht_7CegINcw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_3Sa0gbXdEeaht_7CegINcw" comment="" name="connection_sftp_host" prompt="connection_sftp_host?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3Sa0grXdEeaht_7CegINcw" comment="" name="connection_sftp_port" prompt="connection_sftp_port?" promptNeeded="false" type="id_Integer" value="22"/>
+  <contextParameter xmi:id="_3Sa0g7XdEeaht_7CegINcw" comment="" name="connection_sftp_username" prompt="connection_sftp_username?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3Sa0hLXdEeaht_7CegINcw" comment="" name="connection_sftp_password" prompt="connection_sftp_password?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3Sa0hbXdEeaht_7CegINcw" comment="" name="connection_sftp_encoding" prompt="connection_sftp_encoding?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3Sa0hrXdEeaht_7CegINcw" comment="" name="connection_sftp_auth_method" prompt="connection_sftp_auth_method?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

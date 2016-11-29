@@ -1,0 +1,4 @@
+full_name;first_name;last_name;possible_name_transposed;country_iso3
+Mark      Balkende;Mark;BALKENDE;N;
+Jérémie O'Co-nor'Co-nor;Jérémie;JÉRÉMIE O'CO-NOR'CO-NOR;N;FRA
+Suzie Worthington-Smythe;Suzie;SUZIE WORTHINGTON-SMYTHE;N;DEU

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_3Q_RIbXdEeaht_7CegINcw" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_3Q_RIrXdEeaht_7CegINcw" comment="" name="resource_synonym_idx_ISO3_country_name" prompt="resource_synonym_idx_ISO3_country_name?" promptNeeded="false" type="id_String" value="idx_country/idx_country_codes/idx_ISO3_country_name"/>
+    <contextParameter xmi:id="_3Q_RI7XdEeaht_7CegINcw" comment="" name="resource_synonym_idx_ISO2_country_name" prompt="resource_synonym_idx_ISO2_country_name?" promptNeeded="false" type="id_String" value="idx_country/idx_country_codes/idx_ISO2_country_name"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_3Q_RJLXdEeaht_7CegINcw" confirmationNeeded="false" name="Studio">
+    <contextParameter xmi:id="_3Q_RJbXdEeaht_7CegINcw" comment="" name="resource_synonym_idx_ISO3_country_name" prompt="resource_synonym_idx_ISO3_country_name?" promptNeeded="false" type="id_String" value="D:\tmp\synonym_test\synonym\idx_country\idx_country_codes\idx_ISO3_country_name"/>
+    <contextParameter xmi:id="_3Q_RJrXdEeaht_7CegINcw" comment="" name="resource_synonym_idx_ISO2_country_name" prompt="resource_synonym_idx_ISO2_country_name?" promptNeeded="false" type="id_String" value="D:\tmp\synonym_test\synonym\idx_country\idx_country_codes\idx_ISO2_country_name"/>
+  </talendfile:ContextType>
+</xmi:XMI>

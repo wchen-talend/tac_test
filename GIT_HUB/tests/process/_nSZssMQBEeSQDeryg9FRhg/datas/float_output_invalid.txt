@@ -1,0 +1,5 @@
+1.0;advanced condition failed
+2.3;advanced condition failed
+778.12;advanced condition failed
+43.7;advanced condition failed
+12.5;advanced condition failed

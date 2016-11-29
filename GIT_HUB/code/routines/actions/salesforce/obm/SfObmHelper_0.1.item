@@ -1,0 +1,157 @@
+package routines;
+
+import java.io.File;
+import java.io.InputStream;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+public class SfObmHelper {
+	
+	
+	public static List<SfObmNotification> xmlToList(InputStream file) throws ParserConfigurationException, SAXException, IOException {
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		factory.setNamespaceAware(true);
+		DocumentBuilder builder = factory.newDocumentBuilder();
+		Document document = builder.parse(file);
+		
+		return documentToList(document);
+	}
+	
+	public static List<SfObmNotification> xmlToList(String fileContent) throws ParserConfigurationException, SAXException, IOException {
+		InputStream fileContentIs = new ByteArrayInputStream(fileContent.getBytes("UTF-8"));
+		
+		return xmlToList(fileContentIs);
+	}
+	
+	public static List<SfObmNotification> xmlToList(File file) throws ParserConfigurationException, SAXException, IOException {
+		FileInputStream fileXml = new FileInputStream(file);
+		
+		return xmlToList(fileXml);
+	}
+	
+	private static List<SfObmNotification> documentToList(Document document) throws ParserConfigurationException, SAXException, IOException {
+		List<SfObmNotification> notificationObjects = new ArrayList<SfObmNotification>();
+		
+		String organizationId = document.getElementsByTagName(SfObmNotification.ORGANIZATION_ID).item(0).getTextContent();
+		String actionId = document.getElementsByTagName(SfObmNotification.ACTION_ID).item(0).getTextContent();
+		
+		NodeList allNotifications = document.getElementsByTagName("Notification");
+		for (int i = 0; i < allNotifications.getLength(); i++) {
+			Element notificationElement = (Element) allNotifications.item(i);
+			
+			SfObmNotification notificationObject = new SfObmNotification(organizationId, actionId
+					, notificationElement.getElementsByTagName(SfObmNotification.ID).item(0).getTextContent());
+			
+			Element sObjectNodeElement = (Element) notificationElement.getElementsByTagName("sObject").item(0);
+			SfObmObject sfObject = new SfObmObject(sObjectNodeElement.getAttribute(SfObmObject.TYPE));
+			notificationObject.setSfObject(sfObject);
+			
+			NodeList sObjectNodes = sObjectNodeElement.getChildNodes();
+			for (int k = 0; k < sObjectNodes.getLength(); k++) {
+				Node sObjectChildNode = sObjectNodes.item(k);
+				if (sObjectChildNode.getNodeType() == Node.ELEMENT_NODE) {
+					sfObject.addSfObjectAttribute(new SfObmObjectAttribute(sObjectChildNode.getLocalName(), sObjectChildNode.getTextContent()));
+				}
+			}
+			notificationObjects.add(notificationObject);
+		}
+		return notificationObjects;		
+	}	
+	
+	public static void createXlsFile(String file, List<SfObmNotification> notifications) {
+		Map<String, Integer> columns = new HashMap<String, Integer>();
+		columns.put("sf" + SfObmNotification.ORGANIZATION_ID, 0);
+		columns.put("sf" + SfObmNotification.ACTION_ID, 1);
+		columns.put("sfNotificationId", 2);
+		columns.put("sfObject", 3);
+		
+		HSSFWorkbook wb = new HSSFWorkbook();
+		HSSFSheet sheet = wb.createSheet("Sheet1");
+		// header, first row
+		HSSFRow rowHeader = sheet.createRow(0);
+		HSSFCell cellHeader = rowHeader.createCell(0);
+		cellHeader.setCellValue("sf" + SfObmNotification.ORGANIZATION_ID);
+		
+		cellHeader = rowHeader.createCell(1);
+		cellHeader.setCellValue("sf" + SfObmNotification.ACTION_ID);
+		
+		cellHeader = rowHeader.createCell(2);
+		cellHeader.setCellValue("sfNotificationId");
+		
+		cellHeader = rowHeader.createCell(3);
+		cellHeader.setCellValue("sfObject");		
+		
+		// the rest
+		for (int i = 0; i < notifications.size(); i++) {
+			HSSFRow row = sheet.createRow(i+1);
+			HSSFCell cell = row.createCell(0);
+			cell.setCellValue(notifications.get(i).getOrganizationId());
+			cell = row.createCell(1);
+			cell.setCellValue(notifications.get(i).getActionId());
+			cell = row.createCell(2);
+			cell.setCellValue(notifications.get(i).getId());		
+			SfObmObject sfObject = notifications.get(i).getSfObject();
+			cell = row.createCell(3);
+			cell.setCellValue(sfObject.getType());
+			int numberAttributes = sfObject.getSfObjectAttributesSize();
+			for (int j = 0; j < numberAttributes; j++) {
+				SfObmObjectAttribute attribute = sfObject.getSfObjectAttribute(j);
+				if (!columns.containsKey(attribute.getKey())) {
+					cellHeader = rowHeader.createCell(columns.size());
+					cellHeader.setCellValue(attribute.getKey());					
+					columns.put(attribute.getKey(), columns.size());
+				}
+				cell = row.createCell((int)columns.get(attribute.getKey()));
+				cell.setCellValue(attribute.getValue());				
+			}
+		}
+		
+		FileOutputStream fileOut = null;
+		try {
+			fileOut = new FileOutputStream(file);
+			wb.write(fileOut);
+			fileOut.flush();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			if (null != fileOut) {
+				try {
+					fileOut.close();
+				} catch (IOException e) {
+					// nothing to do
+					e.printStackTrace();
+				}
+			}
+			if (null != wb) {
+				try {
+					wb.close();
+				} catch (IOException e) {
+					// nothing to do
+					e.printStackTrace();
+				}
+			}
+		}
+		
+	}	
+}

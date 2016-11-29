@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_3QzD4LXdEeaht_7CegINcw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_3QzD4bXdEeaht_7CegINcw" comment="" name="connection_smtp_host" prompt="connection_smtp_host?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3QzD4rXdEeaht_7CegINcw" comment="" name="connection_smtp_port" prompt="connection_smtp_port?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3QzD47XdEeaht_7CegINcw" comment="" name="connection_smtp_username" prompt="connection_smtp_username?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3QzD5LXdEeaht_7CegINcw" comment="" name="connection_smtp_password" prompt="connection_smtp_password?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3QzD5bXdEeaht_7CegINcw" comment="" name="connection_smtp_from" prompt="connection_smtp_from?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3QzD5rXdEeaht_7CegINcw" comment="" name="connection_smtp_sendername" prompt="connection_smtp_sendername?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_3RwGILXdEeaht_7CegINcw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_3RwGIbXdEeaht_7CegINcw" comment="" name="connection_redshift_host" prompt="connection_redshift_host?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3RwGIrXdEeaht_7CegINcw" comment="" name="connection_redshift_port" prompt="connection_redshift_port?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3RwGI7XdEeaht_7CegINcw" comment="" name="connection_redshift_database" prompt="connection_redshift_database?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3RwGJLXdEeaht_7CegINcw" comment="" name="connection_redshift_schema" prompt="connection_redshift_schema?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3RwGJbXdEeaht_7CegINcw" comment="" name="connection_redshift_username" prompt="connection_redshift_username?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3RwGJrXdEeaht_7CegINcw" comment="" name="connection_redshift_password" prompt="connection_redshift_password?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

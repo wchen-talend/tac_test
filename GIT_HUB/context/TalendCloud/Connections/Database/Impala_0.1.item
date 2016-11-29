@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_3Rp_gLXdEeaht_7CegINcw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_3Rp_gbXdEeaht_7CegINcw" comment="" name="connection_impala_host" prompt="connection_impala_host?" promptNeeded="true" type="id_String" value=""/>
+  <contextParameter xmi:id="_3Rp_grXdEeaht_7CegINcw" comment="" name="connection_impala_port" prompt="connection_impala_port?" promptNeeded="true" type="id_String" value=""/>
+  <contextParameter xmi:id="_3Rp_g7XdEeaht_7CegINcw" comment="" name="connection_impala_username" prompt="connection_impala_username?" promptNeeded="true" type="id_String" value=""/>
+  <contextParameter xmi:id="_3Rp_hLXdEeaht_7CegINcw" comment="" name="connection_impala_database" prompt="connection_impala_database?" promptNeeded="true" type="id_String" value=""/>
+</talendfile:ContextType>

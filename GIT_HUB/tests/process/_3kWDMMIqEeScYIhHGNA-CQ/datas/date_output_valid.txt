@@ -1,0 +1,7 @@
+country;country_full_english;ISO3_country_code;ISO2_country_code
+Germany;Germany;DEU;DE
+Deutschland;Germany;DEU;DE
+Allemange;Germany;DEU;DE
+US;United States (U.S.);USA;US
+U.S.A.;United States of America (USA);USA;US
+United States;United States of America (USA);USA;US

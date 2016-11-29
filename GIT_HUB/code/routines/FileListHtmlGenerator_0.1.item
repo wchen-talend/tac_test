@@ -1,0 +1,186 @@
+package routines;
+
+import java.io.File;
+import java.io.UnsupportedEncodingException;
+import java.util.HashMap;
+import java.util.Map;
+
+public class FileListHtmlGenerator {
+
+	private static final String FOLDER_IMAGE_URL = "http://images.all-free-download.com/images/graphiclarge/folder_102239.jpg";
+	private static final String FILE_IMAGE_URL = "http://images.all-free-download.com/images/graphiclarge/wordpad_file_99215.jpg";
+	private static final String UP_NAV_IMAGE_URL = "http://images.all-free-download.com/images/graphiclarge/up_101991.jpg";
+	private static final int IMAGE_SIZE = 32;
+	private static final Map<String, String> CONTENTTYPE_MAP = new HashMap<String, String>();
+
+	static {
+		CONTENTTYPE_MAP.put(".pdf", "application/pdf");
+		CONTENTTYPE_MAP.put(".xml", "application/xml");
+		CONTENTTYPE_MAP.put(".wsdl", "application/xml");
+		CONTENTTYPE_MAP.put(".doc", "application/msword");
+		CONTENTTYPE_MAP.put(".docx", "application/msword");
+		CONTENTTYPE_MAP.put(".ppt", "application/vnd.ms-powerpoint");
+		CONTENTTYPE_MAP.put(".pptx", "application/vnd.ms-powerpoint");
+		CONTENTTYPE_MAP.put(".xls", "application/vnd.ms-excel");
+		CONTENTTYPE_MAP.put(".xlsx", "application/vnd.ms-excel");
+	}
+
+	public static String getContentType(String fileName){
+		assert fileName != null;
+		int lastPoint = fileName.lastIndexOf(".");
+		if(lastPoint == -1){
+			return "text/plain";
+		}
+		String contentType = CONTENTTYPE_MAP.get(fileName.substring(lastPoint));
+		return contentType == null?"text/plain":contentType;
+	}
+	
+	public static byte[] generateHtmlBytes(String baseUri, String requestPath)
+	throws UnsupportedEncodingException {
+		return generateHtmlString(baseUri, requestPath).getBytes("UTF-8");
+	}
+	
+	public static String generateHtmlString(String baseUri, String requestPath)
+			throws UnsupportedEncodingException {
+		assert baseUri != null;
+		StringBuilder sb = new StringBuilder();
+		sb.append("<html>");
+		sb.append(generateHead("File System"));
+		sb.append(generateBodyHtml(baseUri, requestPath));
+		sb.append("</html>");
+		return sb.toString();
+	}
+
+	private static String generateBodyHtml(String baseUri, String requestPath)
+			throws UnsupportedEncodingException {
+		if (requestPath == null || "".equals(requestPath.trim())) {
+			requestPath = "/";
+		}
+
+		StringBuilder sb = new StringBuilder();
+		sb.append("<body><h3>File List:</h3><ul>");
+
+		File requestFolder = new File(requestPath);
+		File[] subFiles = requestFolder.listFiles();
+
+		if ("/".equals(requestPath)) {
+			subFiles = java.io.File.listRoots();
+		} else {
+			sb.append(generateUpLevelHtml(baseUri, requestFolder));
+		}
+
+		// separate file and folder
+		StringBuilder fileSb = new StringBuilder();
+		StringBuilder folderSb = new StringBuilder();
+		if (subFiles != null && subFiles.length > 0) {
+			for (File file : subFiles) {
+				if (file.getParentFile() != null && file.isHidden()) {
+					continue;
+				}
+				if (file.isFile()) {
+					fileSb.append(generateFileHtml(baseUri, file));
+				} else {
+					folderSb.append(generateFolderHtml(baseUri, file));
+				}
+
+			}
+		}
+		sb.append(folderSb.toString());
+		sb.append(fileSb.toString());
+		sb.append("</ul></body>");
+		return sb.toString();
+	}
+
+	private static String generateFileHtml(String baseUri, File file)
+			throws UnsupportedEncodingException {
+		StringBuilder sb = new StringBuilder();
+		sb.append("<li>");
+		sb.append(generateNavigatorHtml(baseUri,
+				java.net.URLEncoder.encode(file.getAbsolutePath(), "utf-8"),
+				FILE_IMAGE_URL, file.getName() + generateFileSizeHtml(file),
+				true));
+		sb.append(generateOpenFileHtml(baseUri, file));
+		sb.append("</li>");
+		return sb.toString();
+	}
+
+	private static String generateOpenFileHtml(String baseUri, File file)
+			throws UnsupportedEncodingException {
+		String name = file.getName().toLowerCase();
+		boolean found = false;
+		for (String s : CONTENTTYPE_MAP.keySet()) {
+			if (name.endsWith(s)) {
+				found = true;
+				break;
+			}
+		}
+		if (!found) {
+			return "";
+		}
+		StringBuilder sb = new StringBuilder();
+		sb.append("<button onclick='window.open(\"");
+		sb.append(baseUri);
+		sb.append("file?open=true&fileName=");
+		sb.append(java.net.URLEncoder.encode(file.getAbsolutePath(), "utf-8"));
+		sb.append("\")' >Open File</button>");
+		return sb.toString();
+	}
+
+	private static String generateFileSizeHtml(File file) {
+		float size = 0.0f;
+		String unit = " G";
+		if (file.length() > (1024 << 10 << 10)) {
+			size = ((100 * file.length()) >> 10 >> 10 >> 10) / 100.00f;
+		} else if (file.length() > (1024 << 10)) {
+			size = ((100 * file.length()) >> 10 >> 10) / 100.00f;
+			unit = " M";
+		} else if (file.length() > 1024) {
+			size = ((100 * file.length()) >> 10) / 100.00f;
+			unit = " K";
+		} else {
+			size = file.length();
+			unit = " Bytes";
+		}
+		return "(" + size + unit + ")";
+	}
+
+	private static String generateFolderHtml(String baseUri, File f) {
+		StringBuilder sb = new StringBuilder();
+		sb.append("<li>");
+		sb.append(generateNavigatorHtml(baseUri, f.getAbsolutePath(),
+				FOLDER_IMAGE_URL,
+				f.getParentFile() == null ? f.getPath() : f.getName(), false));
+		sb.append("</li>");
+		return sb.toString();
+	}
+
+	private static String generateUpLevelHtml(String baseUri, File requestFolder) {
+		String parentPath = requestFolder.getParentFile() != null ? requestFolder
+				.getParentFile().getAbsolutePath() : "/";
+		return generateNavigatorHtml(baseUri, parentPath, UP_NAV_IMAGE_URL,
+				"Up one Level", false);
+	}
+
+	private static String generateNavigatorHtml(String baseUri, String path,
+			String imageUrl, String tipText, boolean isFile) {
+		StringBuilder sb = new StringBuilder();
+		sb.append("<img src=\"");
+		sb.append(imageUrl);
+		sb.append("\" width=\"" + IMAGE_SIZE + "\" height=\"" + IMAGE_SIZE
+				+ "\" alt=\"up icon\" />");
+		sb.append("<a href=\"");
+		sb.append(baseUri);
+		sb.append(isFile ? "file?open=false&fileName=" : "list?path=");
+		sb.append(path);
+		sb.append("\">");
+		sb.append(tipText);
+		sb.append("</a>");
+		return sb.toString();
+	}
+
+	private static String generateHead(String title) {
+		return "<title>"
+				+ title
+				+ "</title><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\" /></head>";
+	}
+}

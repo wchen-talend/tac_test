@@ -1,0 +1,81 @@
+package routines;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+public class IpaasFileUtil {
+
+	public static String getFileNameFromPath(String path) {
+		if (path == null || path.isEmpty()) {
+			return null;
+		}
+		return new File(path).getName();
+	}
+
+	public static String getFolderPathFromPath(String path) {
+		if (path == null || path.isEmpty()) {
+			return ".";
+		}
+		final String result;
+		File file = new File(path);
+		if (file.isDirectory()) {
+			result = file.getName();
+		} else {
+			result = file.getParentFile() == null ? "." : file.getParentFile()
+					.getPath();
+		}
+		return result.replace('\\', '/');
+	}
+
+	public static File createTempFile(String fileName, String directory)
+			throws IOException {
+		File file = null;
+		if (directory == null || directory.isEmpty()) {
+			file = File.createTempFile(fileName, null);
+		} else {
+			file = File.createTempFile(fileName, null, new File(directory));
+		}
+		file.deleteOnExit();
+		return file;
+	}
+	
+	public static File createTempFolder(String folderName)
+			throws IOException {
+	     File ftpTempFile = File.createTempFile(folderName, null);
+	     String ftpTempFolder = ftpTempFile.getCanonicalPath();
+	     ftpTempFile.delete();
+	     File file  = new File(ftpTempFolder);
+	     if (file.mkdir())
+	    	 return file;
+	     else
+	    	 throw new java.io.FileNotFoundException("Unable to create temp folder");
+	}
+
+	public static File writeToTempFile(InputStream in, String fileName,
+			String directory) throws IOException {
+		if (in == null) {
+			throw new IllegalArgumentException("File content can not be null");
+		}
+		File file = createTempFile(fileName, directory);
+		FileOutputStream fos = new FileOutputStream(file);
+		int bytes = -1;
+		try {
+			while ((bytes = in.read()) != -1) {
+				fos.write(bytes);
+			}
+			fos.flush();
+		} finally {
+			try {
+				fos.close();
+			} catch (IOException e) {
+			}
+			try {
+				in.close();
+			} catch (IOException e) {
+			}
+		}
+		return file;
+	}
+}

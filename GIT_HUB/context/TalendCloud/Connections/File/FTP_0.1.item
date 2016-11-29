@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_3SIgoLXdEeaht_7CegINcw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_3SIgobXdEeaht_7CegINcw" comment="" name="connection_ftp_host" prompt="connection_ftp_host?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3SIgorXdEeaht_7CegINcw" comment="" name="connection_ftp_port" prompt="connection_ftp_port?" promptNeeded="false" type="id_Integer" value="21"/>
+  <contextParameter xmi:id="_3SIgo7XdEeaht_7CegINcw" comment="" name="connection_ftp_username" prompt="connection_ftp_username?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3SIgpLXdEeaht_7CegINcw" comment="" name="connection_ftp_password" prompt="connection_ftp_password?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3SIgpbXdEeaht_7CegINcw" comment="" name="connection_ftp_connection_mode" prompt="connection_ftp_connection_mode?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3SIgprXdEeaht_7CegINcw" comment="" name="connection_ftp_encoding" prompt="connection_ftp_encoding?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

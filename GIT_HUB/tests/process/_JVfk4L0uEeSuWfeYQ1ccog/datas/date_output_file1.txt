@@ -1,0 +1,2 @@
+first_name;middle_name;last_name;email;company_name;match_status;GRP_SIZE;SCORE;GRP_QUALITY;MATCHING_DISTANCES
+BOB;X;SIMPSON;;;NO Matched Record - GID and GRP_SIZE;1;1.0;1.0;

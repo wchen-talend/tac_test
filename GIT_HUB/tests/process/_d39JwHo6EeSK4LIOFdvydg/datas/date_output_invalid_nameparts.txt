@@ -1,0 +1,6 @@
+last_name;first_name;transpos_ind;full_name;country;error_message
+;;;Balkende mark JR;USA;More then two parts in the name
+;;;Balkende mark jr;;More then two parts in the name
+;;;;;More then two parts in the name
+;;;Mark;;More then two parts in the name
+;;;;Deutschland;More then two parts in the name
