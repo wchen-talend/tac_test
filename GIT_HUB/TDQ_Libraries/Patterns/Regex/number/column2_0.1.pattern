@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.domain.pattern:Pattern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmi:id="_hMAbcAg7EeCLDvUH5rNdLg" name="column2">
+  <taggedValue xmi:id="_hMAbcQg7EeCLDvUH5rNdLg" tag="Status" value="development"/>
+  <taggedValue xmi:id="_hMAbcgg7EeCLDvUH5rNdLg" tag="Author" value="user@company.com"/>
+  <taggedValue xmi:id="_hMAbcwg7EeCLDvUH5rNdLg" tag="Purpose"/>
+  <taggedValue xmi:id="_hMAbdAg7EeCLDvUH5rNdLg" tag="Description"/>
+  <taggedValue xmi:id="_hMAbdQg7EeCLDvUH5rNdLg" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_hMAbdgg7EeCLDvUH5rNdLg" tag="Validation_Status" value="true"/>
+  <taggedValue xmi:id="_hMTWYQg7EeCLDvUH5rNdLg" tag="Property File" value="/DQ_TUTORIALS/TDQ_Libraries/Patterns/Regex/number/Y29sdW1uMg==20101215120734_0.1.properties"/>
+  <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_hMAbdwg7EeCLDvUH5rNdLg" expressionType="REGEXP">
+    <expression xmi:id="_hMAbeAg7EeCLDvUH5rNdLg" body="'^0$|^1$|^2$|^3$|^4$|^A$|^B$|^C$'" language="SQL"/>
+  </components>
+</dataquality.domain.pattern:Pattern>
