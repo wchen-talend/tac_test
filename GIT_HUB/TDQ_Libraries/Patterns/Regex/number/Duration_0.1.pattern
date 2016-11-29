@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.domain.pattern:Pattern xmi:id="_0bQYMAgzEeCLDvUH5rNdLg" name="Duration" supplierDependency="_9m3MIAgzEeCLDvUH5rNdLg">
+    <taggedValue xmi:id="_0bQYMQgzEeCLDvUH5rNdLg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_0bQYMggzEeCLDvUH5rNdLg" tag="Author" value="user@company.com"/>
+    <taggedValue xmi:id="_0bQYMwgzEeCLDvUH5rNdLg" tag="Purpose"/>
+    <taggedValue xmi:id="_0bQYNAgzEeCLDvUH5rNdLg" tag="Description"/>
+    <taggedValue xmi:id="_0bQYNQgzEeCLDvUH5rNdLg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_0bQYNggzEeCLDvUH5rNdLg" tag="Validation_Status" value="true"/>
+    <taggedValue xmi:id="_0baJMQgzEeCLDvUH5rNdLg" tag="Property File" value="/DQ_TUTORIALS/TDQ_Libraries/Patterns/Regex/number/RHVyYXRpb24=20101215111227_0.1.properties"/>
+    <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_0bQYNwgzEeCLDvUH5rNdLg" expressionType="REGEXP">
+      <expression xmi:id="_0bQYOAgzEeCLDvUH5rNdLg" body="'^30$'" language="SQL"/>
+    </components>
+  </dataquality.domain.pattern:Pattern>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_9m3MIAgzEeCLDvUH5rNdLg" kind="Usage" supplier="_0bQYMAgzEeCLDvUH5rNdLg">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/TUTO72/crm_contract_0.1.ana#_Txf_IAgwEeCLDvUH5rNdLg"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>
