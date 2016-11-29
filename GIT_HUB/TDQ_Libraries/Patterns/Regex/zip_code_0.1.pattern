@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.domain.pattern:Pattern xmi:id="_pcjdsAgtEeCLDvUH5rNdLg" name="zip_code" supplierDependency="_r_AW4AguEeCLDvUH5rNdLg">
+    <taggedValue xmi:id="_pcjdsQgtEeCLDvUH5rNdLg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_pcjdsggtEeCLDvUH5rNdLg" tag="Author" value="user@company.com"/>
+    <taggedValue xmi:id="_pcjdswgtEeCLDvUH5rNdLg" tag="Purpose"/>
+    <taggedValue xmi:id="_pcjdtAgtEeCLDvUH5rNdLg" tag="Description"/>
+    <taggedValue xmi:id="_pcjdtQgtEeCLDvUH5rNdLg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_pcjdtggtEeCLDvUH5rNdLg" tag="Validation_Status" value="true"/>
+    <taggedValue xmi:id="_pcsnoQgtEeCLDvUH5rNdLg" tag="Property File" value="/DQ_TUTORIALS/TDQ_Libraries/Patterns/Regex/emlwX2NvZGU=20101215102816_0.1.properties"/>
+    <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_pcjdtwgtEeCLDvUH5rNdLg" expressionType="REGEXP">
+      <expression xmi:id="_pcjduAgtEeCLDvUH5rNdLg" body="'^[[:digit:]][[:digit:]][[:digit:]][[:digit:]][[:digit:]]$'" language="MySQL"/>
+    </components>
+  </dataquality.domain.pattern:Pattern>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_r_AW4AguEeCLDvUH5rNdLg" kind="Usage" supplier="_pcjdsAgtEeCLDvUH5rNdLg">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/TUTO72/cif_customer_0.1.ana#_BVcmoAhIEeCLDvUH5rNdLg"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/TUTO72/crm_cust_0.1.ana#_sQmIEAgsEeCLDvUH5rNdLg"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>
