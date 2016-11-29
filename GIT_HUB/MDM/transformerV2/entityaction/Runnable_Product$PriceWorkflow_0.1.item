@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSTransformerV2E xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_fm918ET_EeOrRok8QU_doQ" name="Runnable_Product#PriceWorkflow" description="[EN:Request Price Change][FR:Demande changement prix]">
+  <processSteps xmi:id="_J3a8IEUGEeOrRok8QU_doQ" pluginJNDI="amalto/local/transformer/plugin/workflowcontexttrigger" description="Invoke the workflow" parameters="&lt;parameters>&#xA;&lt;processId>Product_Product&lt;/processId>&lt;processVersion>1.0&lt;/processVersion>&#xA;&lt;defaultDataModel>Product&lt;/defaultDataModel>&lt;/parameters>">
+    <inputMappings xmi:id="_J3a8IUUGEeOrRok8QU_doQ" pipelineVariable="_DEFAULT_" pluginVariable="update_report"/>
+    <outputMappings xmi:id="_J3a8IkUGEeOrRok8QU_doQ" pipelineVariable="output" pluginVariable="execution_result"/>
+  </processSteps>
+</mdmserverobject:WSTransformerV2E>

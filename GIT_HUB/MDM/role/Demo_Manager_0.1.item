@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSRoleE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_t7VTE3dIEeGMK_tLGnzsJg" name="Demo_Manager" description="[EN:Demo Manager User][FR:Utilisateur Manager Démo]">
+  <specification xmi:id="_t7VTFHdIEeGMK_tLGnzsJg" objectType=""/>
+  <specification xmi:id="_t7VTFXdIEeGMK_tLGnzsJg" objectType="Routing Engine V2"/>
+  <specification xmi:id="_t7VTF3dIEeGMK_tLGnzsJg" objectType="Service"/>
+  <specification xmi:id="_t7VTG3dIEeGMK_tLGnzsJg" objectType="Routing Rule">
+    <instance xmi:id="_t7VTHHdIEeGMK_tLGnzsJg" instanceName=".*"/>
+  </specification>
+  <specification xmi:id="_t7VTHXdIEeGMK_tLGnzsJg" objectType="Background Job"/>
+  <specification xmi:id="_t7VTHndIEeGMK_tLGnzsJg" admin="true" objectType="Transformer Plugin"/>
+  <specification xmi:id="_t7VTH3dIEeGMK_tLGnzsJg" objectType="Menu">
+    <instance xmi:id="_t7VTIndIEeGMK_tLGnzsJg" instanceName="Datastewardship">
+      <parameter><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<role-menu-parameters position="1"><parent-iD></parent-iD></role-menu-parameters>]]></parameter>
+    </instance>
+    <instance xmi:id="_t7VTKHdIEeGMK_tLGnzsJg" instanceName="UpdateReport">
+      <parameter><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<role-menu-parameters position="1"><parent-iD></parent-iD></role-menu-parameters>]]></parameter>
+    </instance>
+  </specification>
+  <specification xmi:id="_t7VTKXdIEeGMK_tLGnzsJg" admin="true" objectType="Transformer V2"/>
+  <specification xmi:id="_t7VTKndIEeGMK_tLGnzsJg" objectType="Stored Procedure"/>
+  <specification xmi:id="_t7VTK3dIEeGMK_tLGnzsJg" objectType="View">
+    <instance xmi:id="_t7VTLHdIEeGMK_tLGnzsJg" instanceName="Browse_items_.*" writable="true"/>
+  </specification>
+  <specification xmi:id="_t7VTLndIEeGMK_tLGnzsJg" admin="true" objectType="Routing Order V2 Failed"/>
+  <specification xmi:id="_t7VTL3dIEeGMK_tLGnzsJg" admin="true" objectType="Item"/>
+  <specification xmi:id="_t7VTMXdIEeGMK_tLGnzsJg" objectType="Data Model">
+    <instance xmi:id="_t7VTM3dIEeGMK_tLGnzsJg" instanceName="Product"/>
+  </specification>
+  <specification xmi:id="_t7VTNndIEeGMK_tLGnzsJg" admin="true" objectType="Routing Order V2 Completed"/>
+  <specification xmi:id="_t7VTN3dIEeGMK_tLGnzsJg" objectType="Role">
+    <instance xmi:id="_t7VTOHdIEeGMK_tLGnzsJg" instanceName=".*"/>
+  </specification>
+  <specification xmi:id="_t7VTOXdIEeGMK_tLGnzsJg" objectType="Data Cluster">
+    <instance xmi:id="_t7VTO3dIEeGMK_tLGnzsJg" instanceName="Product"/>
+  </specification>
+  <specification xmi:id="_t7VTPXdIEeGMK_tLGnzsJg" admin="true" objectType="Transformer Plugin V2"/>
+  <specification xmi:id="_t7VTPndIEeGMK_tLGnzsJg" objectType="Configuration Info"/>
+  <specification xmi:id="_t7VTP3dIEeGMK_tLGnzsJg" admin="true" objectType="Transformer"/>
+</mdmserverobject:WSRoleE>

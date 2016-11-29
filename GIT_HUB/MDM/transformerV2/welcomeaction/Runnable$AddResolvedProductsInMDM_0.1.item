@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSTransformerV2E xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_tz3ZI3dIEeGMK_tLGnzsJg" name="Runnable#AddResolvedProductsInMDM" description="[EN:Load resolved products][FR:Enregistre les produits résolus]">
+  <processSteps xmi:id="_tz3ZJHdIEeGMK_tLGnzsJg" pluginJNDI="amalto/local/transformer/plugin/callJob" description="Invoke the job" parameters="&lt;configuration>&#xA;  &lt;url>ltj://AddResolvedProductsInMDM/0.1&lt;/url>&#xA;&lt;/configuration>">
+    <inputMappings xmi:id="_tz3ZJXdIEeGMK_tLGnzsJg" pipelineVariable="_DEFAULT_" pluginVariable="text"/>
+    <outputMappings xmi:id="_tz3ZJndIEeGMK_tLGnzsJg" pipelineVariable="output" pluginVariable="result"/>
+  </processSteps>
+</mdmserverobject:WSTransformerV2E>

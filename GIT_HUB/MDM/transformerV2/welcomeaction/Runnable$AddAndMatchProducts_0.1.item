@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSTransformerV2E xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_tyb1wHdIEeGMK_tLGnzsJg" name="Runnable#AddAndMatchProducts" description="[EN:Add new products][FR:Nouveaux produits]">
+  <processSteps xmi:id="_tyb1wXdIEeGMK_tLGnzsJg" pluginJNDI="amalto/local/transformer/plugin/callJob" description="Invoke the job" parameters="&lt;configuration>&#xA;  &lt;url>ltj://AddAndMatchProducts/0.1&lt;/url>&#xA;&lt;/configuration>">
+    <inputMappings xmi:id="_tyb1wndIEeGMK_tLGnzsJg" pipelineVariable="_DEFAULT_" pluginVariable="text"/>
+    <outputMappings xmi:id="_tyb1w3dIEeGMK_tLGnzsJg" pipelineVariable="output" pluginVariable="result"/>
+  </processSteps>
+</mdmserverobject:WSTransformerV2E>
