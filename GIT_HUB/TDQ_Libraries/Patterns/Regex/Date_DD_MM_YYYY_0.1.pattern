@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.domain.pattern:Pattern xmi:id="_ye07MAhIEeCLDvUH5rNdLg" name="Date DD MM YYYY" supplierDependency="_pb2pYAhJEeCLDvUH5rNdLg">
+    <taggedValue xmi:id="_ye07MQhIEeCLDvUH5rNdLg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_ye07MghIEeCLDvUH5rNdLg" tag="Author" value="user@company.com"/>
+    <taggedValue xmi:id="_ye07MwhIEeCLDvUH5rNdLg" tag="Purpose" value="match 25/12/2007|||11-07-1517"/>
+    <taggedValue xmi:id="_ye07NAhIEeCLDvUH5rNdLg" tag="Description" value="This regular expressions matches dates in the format DD/MM/YYYY where MM can be 01 to 12, DD can be 01 to 31 and YYYY is always 4 digits long."/>
+    <taggedValue xmi:id="_ye07NQhIEeCLDvUH5rNdLg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_ye07NghIEeCLDvUH5rNdLg" tag="Validation_Status" value="true"/>
+    <taggedValue xmi:id="_ye-sMQhIEeCLDvUH5rNdLg" tag="Property File" value="/DQ_TUTORIALS/TDQ_Libraries/Patterns/Regex/REQtTU0tWVlZWQ==20101215014233_0.1.properties"/>
+    <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_ye07NwhIEeCLDvUH5rNdLg" expressionType="REGEXP">
+      <expression xmi:id="_ye07OAhIEeCLDvUH5rNdLg" body="'^((0[1-9])|(1[0-9])|(2[0-9])|(3[0-1]))(\/|-)((0[1-9])|(1[0-2]))(\/|-)((19|20)[0-9]{2})$'" language="SQL"/>
+    </components>
+  </dataquality.domain.pattern:Pattern>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_pb2pYAhJEeCLDvUH5rNdLg" kind="Usage" supplier="_ye07MAhIEeCLDvUH5rNdLg">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/TUTO72/cif_acct_0.1.ana#_FVeWQAg3EeCLDvUH5rNdLg"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/TUTO72/cif_customer_0.1.ana#_BVcmoAhIEeCLDvUH5rNdLg"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.domain.pattern:Pattern xmi:id="_AhDlUEswEeC7bsttjWZG-w" name="CustomSKUPattern" supplierDependency="_TPsOsEswEeC7bsttjWZG-w">
+    <taggedValue xmi:id="_AhDlUUswEeC7bsttjWZG-w" tag="Status" value="development"/>
+    <taggedValue xmi:id="_AhDlUkswEeC7bsttjWZG-w" tag="Author" value="user@company.com"/>
+    <taggedValue xmi:id="_AhDlU0swEeC7bsttjWZG-w" tag="Purpose"/>
+    <taggedValue xmi:id="_AhDlVEswEeC7bsttjWZG-w" tag="Description"/>
+    <taggedValue xmi:id="_AhDlVUswEeC7bsttjWZG-w" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_AhDlVkswEeC7bsttjWZG-w" tag="Validation_Status" value="true"/>
+    <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_AhDlV0swEeC7bsttjWZG-w" expressionType="REGEXP">
+      <expression xmi:id="_AhDlWEswEeC7bsttjWZG-w" body="'^[A-Z0-9]{2}-[0-9]{4}$'" language="SQL"/>
+    </components>
+  </dataquality.domain.pattern:Pattern>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_TPsOsEswEeC7bsttjWZG-w" kind="Usage" supplier="_AhDlUEswEeC7bsttjWZG-w">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../../TDQ_Data Profiling/Analyses/TUTO75/ValidateSKUs_0.1.ana#_OlCdcEswEeC7bsttjWZG-w"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>
