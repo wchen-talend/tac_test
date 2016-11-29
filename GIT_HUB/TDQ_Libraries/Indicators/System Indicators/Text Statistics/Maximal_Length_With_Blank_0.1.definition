@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.indicators.definition:IndicatorDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.indicators.definition="http://dataquality.indicators.definition" xmi:id="_-xmZcJSOEd-TE5ti6XNR2Q" name="Maximal Length With Blank" label="Maximal Length With Blank">
+  <taggedValue xmi:id="_-xmZcZSOEd-TE5ti6XNR2Q" tag="Description" value="computes the maximal length of a text field. counting blank data in the mean time."/>
+  <taggedValue xmi:id="_-xmZcpSOEd-TE5ti6XNR2Q" tag="Purpose" value="evaluates the length of the longest textual record"/>
+  <categories href="../../../.Talend.definition#_ccKHERF2Ed2PKb6nEJEvhw"/>
+  <sqlGenericExpression xmi:id="_oyQsMDYqEeO-kehgQ8wp_w" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+  <sqlGenericExpression xmi:id="_oyQsMTYqEeO-kehgQ8wp_w" body="SELECT MAX( LENGTH(&lt;%=__COLUMN_NAMES__%>) ) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Oracle"/>
+  <sqlGenericExpression xmi:id="_oyQsMjYqEeO-kehgQ8wp_w" body="SELECT MAX(LEN(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server"/>
+  <sqlGenericExpression xmi:id="_oyQsMzYqEeO-kehgQ8wp_w" body="SELECT MAX(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) &lt;%=__AND_WHERE_CLAUSE__%>" language="DB2"/>
+  <sqlGenericExpression xmi:id="_oyQsNDYqEeO-kehgQ8wp_w" body="SELECT MAX(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Ingres"/>
+  <sqlGenericExpression xmi:id="_oyQsNTYqEeO-kehgQ8wp_w" body="SELECT MAX(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) &lt;%=__AND_WHERE_CLAUSE__%>" language="SQLite"/>
+  <sqlGenericExpression xmi:id="_oyQsNjYqEeO-kehgQ8wp_w" body="SELECT MAX(LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Hive"/>
+  <sqlGenericExpression xmi:id="_o4qPIDYqEeO-kehgQ8wp_w" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Teradata"/>
+  <sqlGenericExpression xmi:id="_o4qPITYqEeO-kehgQ8wp_w" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+  <sqlGenericExpression xmi:id="_o4qPIjYqEeO-kehgQ8wp_w" body="SELECT MAX(CHAR_LENGTH( &lt;%=__COLUMN_NAMES__%> )) FROM  &lt;%=__TABLE_NAME__%>   WHERE ( &lt;%=__COLUMN_NAMES__%>  IS NOT NULL ) &lt;%=__AND_WHERE_CLAUSE__%>" language="Informix"/>
+  <sqlGenericExpression xmi:id="_o4qPIzYqEeO-kehgQ8wp_w" body="SELECT MAX(CHAR_LENGTH(&lt;%=__COLUMN_NAMES__%>)) FROM &lt;%=__TABLE_NAME__%>  WHERE (&lt;%=__COLUMN_NAMES__%> IS NOT NULL ) &lt;%=__AND_WHERE_CLAUSE__%>" language="PostgreSQL"/>
+</dataquality.indicators.definition:IndicatorDefinition>
