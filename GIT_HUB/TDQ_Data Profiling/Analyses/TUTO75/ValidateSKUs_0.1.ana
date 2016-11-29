@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_OlCdcEswEeC7bsttjWZG-w" name="ValidateSKUs" fileName="/DQ_TUTORIALS/TDQ_Data Profiling/Analyses/ValidateSKUs_0.1.ana" creationDate="2011-03-11T00:05:32.999+0800">
+    <clientDependency href="../../../metadata/connections/Tutorials_0.1.item#_R94BgEswEeC7bsttjWZG-w"/>
+    <clientDependency href="../../../TDQ_Libraries/Patterns/Regex/SKUs/CustomSKUPattern_0.1.pattern#_TPsOsEswEeC7bsttjWZG-w"/>
+    <taggedValue xmi:id="_OlCdcUswEeC7bsttjWZG-w" tag="Status" value="development"/>
+    <taggedValue xmi:id="_OlCdckswEeC7bsttjWZG-w" tag="Author" value="user@company.com"/>
+    <taggedValue xmi:id="_OlCdc0swEeC7bsttjWZG-w" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_OlCddEswEeC7bsttjWZG-w" tag="Description" value=""/>
+    <taggedValue xmi:id="_OlCddUswEeC7bsttjWZG-w" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_OlMOcUswEeC7bsttjWZG-w" tag="Property File" value="/DQ_TUTORIALS/TDQ_Data Profiling/Analyses/VmFsaWRhdGVTS1Vz20110310050532_0.1.properties"/>
+    <context xmi:id="_OlCddkswEeC7bsttjWZG-w">
+      <connection href="../../../metadata/connections/Tutorials_0.1.item#_pvMB8EstEeC7bsttjWZG-w"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/Tutorials_0.1.item#_BLzn8EsvEeC7bsttjWZG-w"/>
+    </context>
+    <results xmi:id="_OlCdd0swEeC7bsttjWZG-w">
+      <resultMetadata xmi:id="_OlCdeEswEeC7bsttjWZG-w" executionDate="2011-05-20T13:50:07.701+0800" executionDuration="47" executionNumber="4" lastRunOk="true" lastExecutionNumberOk="4"/>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_VjNwgEswEeC7bsttjWZG-w" name="CustomSKUPattern" count="58" computed="true" matchingValueCount="24" notMatchingValueCount="34">
+        <parameters xmi:id="_VjNwgUswEeC7bsttjWZG-w">
+          <dataValidDomain xmi:id="_VjNwgkswEeC7bsttjWZG-w">
+            <patterns href="../../../TDQ_Libraries/Patterns/Regex/SKUs/CustomSKUPattern_0.1.pattern#_AhDlUEswEeC7bsttjWZG-w"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/Tutorials_0.1.item#_BLzn8EsvEeC7bsttjWZG-w"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_WIBtwEswEeC7bsttjWZG-w" body="SELECT COUNT(CASE WHEN `SKU` REGEXP BINARY '^[A-Z0-9]{2}-[0-9]{4}$' THEN 1 END), COUNT(*) FROM `tutorials`.`partsmaster` " language="MySQL"/>
+      </indicators>
+    </results>
+    <parameters xmi:id="_OlCdeUswEeC7bsttjWZG-w" dataFilter="_R94BgkswEeC7bsttjWZG-w" analysisType="Multiple Column Analysis"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_R94BgkswEeC7bsttjWZG-w" name="ValidateSKUs">
+    <ranges xmi:id="_R94Bg0swEeC7bsttjWZG-w">
+      <expressions xmi:id="_R94BhEswEeC7bsttjWZG-w">
+        <expression xsi:type="relational:TdExpression" xmi:id="_R94BhUswEeC7bsttjWZG-w" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>

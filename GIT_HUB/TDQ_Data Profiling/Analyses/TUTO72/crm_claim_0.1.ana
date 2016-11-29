@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_mNJeQAg0EeCLDvUH5rNdLg" name="crm_claim" supplierDependency="_jpENkAhYEeCYWb7D_hg3dw" fileName="/DQ_TUTORIALS/TDQ_Data Profiling/Analyses/crm/crm_claim_0.1.ana" creationDate="2010-12-15T18:18:01.636+0800">
+    <clientDependency href="../../../metadata/connections/CRM_0.1.item#_jysGQH-OEeCx04HGvj8drw"/>
+    <taggedValue xmi:id="_mNJeQQg0EeCLDvUH5rNdLg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_mNJeQgg0EeCLDvUH5rNdLg" tag="Author" value="xqliu@talend.com"/>
+    <taggedValue xmi:id="_mNJeQwg0EeCLDvUH5rNdLg" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_mNJeRAg0EeCLDvUH5rNdLg" tag="Description" value=""/>
+    <taggedValue xmi:id="_mNJeRQg0EeCLDvUH5rNdLg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_mNmKMQg0EeCLDvUH5rNdLg" tag="Property File" value="/DQ_TUTORIALS/TDQ_Data Profiling/Analyses/crm/Y3JtX2NsYWlt20101215111801_0.1.properties"/>
+    <composite href="../../Reports/Y29weSBvZiBjaWZfb3ZlcnZpZXc=20101215033445_0.1.rep#_dlwnUAhYEeCYWb7D_hg3dw"/>
+    <composite href="../../Reports/crm_report_0.1.rep#_C2LGsEvtEeCEJ5SL6lrm5A"/>
+    <composite href="../../Reports/crm_report_0.1.rep#_6L-qMH-TEeCx04HGvj8drw"/>
+    <context xmi:id="_mNJeRgg0EeCLDvUH5rNdLg">
+      <connection href="../../../metadata/connections/CRM_0.1.item#_iS-PUUvuEeCEJ5SL6lrm5A"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/CRM_0.1.item#_Jp4ky0vvEeCEJ5SL6lrm5A"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/CRM_0.1.item#_Jp4kz0vvEeCEJ5SL6lrm5A"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/CRM_0.1.item#_Jp4k00vvEeCEJ5SL6lrm5A"/>
+    </context>
+    <results xmi:id="_mNJeRwg0EeCLDvUH5rNdLg">
+      <resultMetadata xmi:id="_mNJeSAg0EeCLDvUH5rNdLg" executionDate="2011-05-20T13:48:11.100+0800" executionDuration="1367" executionNumber="5" lastRunOk="true" lastExecutionNumberOk="5"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_uHqEEH-QEeCx04HGvj8drw" count="100" computed="true">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CRM_0.1.item#_Jp4ky0vvEeCEJ5SL6lrm5A"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_vCpFoH-QEeCx04HGvj8drw" body="SELECT COUNT(*) FROM `crm`.`claim` " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_uHqEEX-QEeCx04HGvj8drw" count="100" computed="true">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CRM_0.1.item#_Jp4ky0vvEeCEJ5SL6lrm5A"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_vCpFoX-QEeCx04HGvj8drw" body="SELECT COUNT(*) FROM `crm`.`claim` WHERE `code` IS NULL " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_uHqEEn-QEeCx04HGvj8drw" count="100" computed="true" distinctValueCount="93">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CRM_0.1.item#_Jp4ky0vvEeCEJ5SL6lrm5A"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_vCpFon-QEeCx04HGvj8drw" body="SELECT COUNT(DISTINCT `code`) FROM `crm`.`claim` " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_uHqEE3-QEeCx04HGvj8drw" count="100" computed="true" uniqueValueCount="86">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CRM_0.1.item#_Jp4ky0vvEeCEJ5SL6lrm5A"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_vCpFo3-QEeCx04HGvj8drw" body="SELECT COUNT(*) FROM (SELECT `code`, COUNT(*) mycount FROM `crm`.`claim`  GROUP BY `code` HAVING mycount = 1) AS myquery" language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_uHqEFH-QEeCx04HGvj8drw" count="100" computed="true" duplicateValueCount="7">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CRM_0.1.item#_Jp4ky0vvEeCEJ5SL6lrm5A"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_vCpFpH-QEeCx04HGvj8drw" body="SELECT COUNT(*) FROM (SELECT `code`, COUNT(*) mycount FROM `crm`.`claim`  m  GROUP BY `code` HAVING mycount > 1) AS myquery" language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_uHqEFX-QEeCx04HGvj8drw" count="100" computed="true">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CRM_0.1.item#_Jp4kz0vvEeCEJ5SL6lrm5A"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_vCpFpX-QEeCx04HGvj8drw" body="SELECT COUNT(*) FROM `crm`.`claim` " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_uHqEFn-QEeCx04HGvj8drw" count="100" computed="true">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CRM_0.1.item#_Jp4kz0vvEeCEJ5SL6lrm5A"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_vCpFpn-QEeCx04HGvj8drw" body="SELECT COUNT(*) FROM `crm`.`claim` WHERE `Date` IS NULL " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_uHqEF3-QEeCx04HGvj8drw" count="100" computed="true" distinctValueCount="93">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CRM_0.1.item#_Jp4kz0vvEeCEJ5SL6lrm5A"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_vCpFp3-QEeCx04HGvj8drw" body="SELECT COUNT(DISTINCT `Date`) FROM `crm`.`claim` " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_uHqEGH-QEeCx04HGvj8drw" count="100" computed="true" uniqueValueCount="86">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CRM_0.1.item#_Jp4kz0vvEeCEJ5SL6lrm5A"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_vCpFqH-QEeCx04HGvj8drw" body="SELECT COUNT(*) FROM (SELECT `Date`, COUNT(*) mycount FROM `crm`.`claim`  GROUP BY `Date` HAVING mycount = 1) AS myquery" language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_uHqEGX-QEeCx04HGvj8drw" count="100" computed="true" duplicateValueCount="7">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CRM_0.1.item#_Jp4kz0vvEeCEJ5SL6lrm5A"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_vCpFqX-QEeCx04HGvj8drw" body="SELECT COUNT(*) FROM (SELECT `Date`, COUNT(*) mycount FROM `crm`.`claim`  m  GROUP BY `Date` HAVING mycount > 1) AS myquery" language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_uHqEGn-QEeCx04HGvj8drw" count="100" computed="true">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CRM_0.1.item#_Jp4k00vvEeCEJ5SL6lrm5A"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_vCpFqn-QEeCx04HGvj8drw" body="SELECT COUNT(*) FROM `crm`.`claim` " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_uHqEG3-QEeCx04HGvj8drw" count="100" computed="true">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CRM_0.1.item#_Jp4k00vvEeCEJ5SL6lrm5A"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_vCpFq3-QEeCx04HGvj8drw" body="SELECT COUNT(*) FROM `crm`.`claim` WHERE `cont_num` IS NULL " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_uHqEHH-QEeCx04HGvj8drw" count="100" computed="true" distinctValueCount="88">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CRM_0.1.item#_Jp4k00vvEeCEJ5SL6lrm5A"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_vCpssH-QEeCx04HGvj8drw" body="SELECT COUNT(DISTINCT `cont_num`) FROM `crm`.`claim` " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_uHqEHX-QEeCx04HGvj8drw" count="100" computed="true" uniqueValueCount="76">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CRM_0.1.item#_Jp4k00vvEeCEJ5SL6lrm5A"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_vCpssX-QEeCx04HGvj8drw" body="SELECT COUNT(*) FROM (SELECT `cont_num`, COUNT(*) mycount FROM `crm`.`claim`  GROUP BY `cont_num` HAVING mycount = 1) AS myquery" language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_uHqEHn-QEeCx04HGvj8drw" count="100" computed="true" duplicateValueCount="12">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CRM_0.1.item#_Jp4k00vvEeCEJ5SL6lrm5A"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_vCpssn-QEeCx04HGvj8drw" body="SELECT COUNT(*) FROM (SELECT `cont_num`, COUNT(*) mycount FROM `crm`.`claim`  m  GROUP BY `cont_num` HAVING mycount > 1) AS myquery" language="MySQL"/>
+      </indicators>
+    </results>
+    <parameters xmi:id="_mNJeSQg0EeCLDvUH5rNdLg" dataFilter="_07wLTQg1EeCLDvUH5rNdLg" analysisType="Multiple Column Analysis"/>
+  </dataquality.analysis:Analysis>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_jpENkAhYEeCYWb7D_hg3dw" kind="Usage" supplier="_mNJeQAg0EeCLDvUH5rNdLg">
+    <client xsi:type="dataquality.reports:TdReport" href="../../Reports/Y29weSBvZiBjaWZfb3ZlcnZpZXc=20101215033445_0.1.rep#_dlwnUAhYEeCYWb7D_hg3dw"/>
+    <client xsi:type="dataquality.reports:TdReport" href="../../Reports/crm_report_0.1.rep#_6L-qMH-TEeCx04HGvj8drw"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+  <dataquality.domain:Domain xmi:id="_07wLTQg1EeCLDvUH5rNdLg" name="crm_claim">
+    <ranges xmi:id="_07wLTgg1EeCLDvUH5rNdLg">
+      <expressions xmi:id="_07wLTwg1EeCLDvUH5rNdLg">
+        <expression xsi:type="relational:TdExpression" xmi:id="_07wLUAg1EeCLDvUH5rNdLg" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>

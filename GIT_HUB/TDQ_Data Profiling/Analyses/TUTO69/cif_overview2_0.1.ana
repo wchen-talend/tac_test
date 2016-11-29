@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.schema="http://dataquality.indicators.schema" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <dataquality.analysis:Analysis xmi:id="_hkty0H-OEeCx04HGvj8drw" name="cif_overview2" supplierDependency="_mPVyEX-SEeCx04HGvj8drw" creationDate="2011-05-16T16:01:33.626+0800">
+    <clientDependency href="../../../metadata/connections/CIF_0.1.item#_hksksH-OEeCx04HGvj8drw"/>
+    <taggedValue xmi:id="_hkty0X-OEeCx04HGvj8drw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_hkty0n-OEeCx04HGvj8drw" tag="Author" value="xqliu@talend.com"/>
+    <taggedValue xmi:id="_hkty03-OEeCx04HGvj8drw" tag="Purpose"/>
+    <taggedValue xmi:id="_hkty1H-OEeCx04HGvj8drw" tag="Description"/>
+    <taggedValue xmi:id="_hkty1X-OEeCx04HGvj8drw" tag="Version" value="0.1"/>
+    <composite href="../../Reports/cif_overview_0.1.rep#_9kLhMAhXEeCYWb7D_hg3dw"/>
+    <context xmi:id="_hkty1n-OEeCx04HGvj8drw">
+      <connection href="../../../metadata/connections/CIF_0.1.item#_ONJTAQhiEeCYWb7D_hg3dw"/>
+      <analysedElements xsi:type="orgomg.cwm.resource.relational:Catalog" href="../../../metadata/connections/CIF_0.1.item#_74m88AhnEeCYWb7D_hg3dw"/>
+    </context>
+    <results xmi:id="_hkty13-OEeCx04HGvj8drw">
+      <resultMetadata xmi:id="_hkty2H-OEeCx04HGvj8drw" executionDate="2011-05-20T13:46:47.724+0800" executionDuration="158" executionNumber="4" lastRunOk="true" lastExecutionNumberOk="4"/>
+      <indicators xsi:type="dataquality.indicators.schema:CatalogIndicator" xmi:id="_hkty2X-OEeCx04HGvj8drw" computed="true" tableCount="6" keyCount="2" indexCount="2" tableRowCount="3467">
+        <analyzedElement xsi:type="orgomg.cwm.resource.relational:Catalog" href="../../../metadata/connections/CIF_0.1.item#_74m88AhnEeCYWb7D_hg3dw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Catalog_Overview_0.1.definition#_QwDiwMYUEd27NP4lvE0A4w"/>
+        <tableIndicators xmi:id="_XGue0IKgEeCQ54Ikc0sNtw" rowCount="800" tableName="acct">
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+        <tableIndicators xmi:id="_XGywQIKgEeCQ54Ikc0sNtw" rowCount="800" tableName="acct_new" keyCount="1" indexCount="1">
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+        <tableIndicators xmi:id="_XG3owIKgEeCQ54Ikc0sNtw" rowCount="239" tableName="country">
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+        <tableIndicators xmi:id="_XHJ8oIKgEeCQ54Ikc0sNtw" rowCount="318" tableName="customer">
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+        <tableIndicators xmi:id="_XHM_8IKgEeCQ54Ikc0sNtw" rowCount="318" tableName="customer_new" keyCount="1" indexCount="1">
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+        <tableIndicators xmi:id="_XHVi0IKgEeCQ54Ikc0sNtw" rowCount="992" tableName="person">
+          <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+        </tableIndicators>
+      </indicators>
+    </results>
+    <parameters xmi:id="_hkty2n-OEeCx04HGvj8drw" analysisType="Catalog Analysis"/>
+  </dataquality.analysis:Analysis>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_mPVyEX-SEeCx04HGvj8drw" kind="Usage" supplier="_hkty0H-OEeCx04HGvj8drw">
+    <client xsi:type="dataquality.reports:TdReport" href="../../Reports/cif_overview_0.1.rep#_9kLhMAhXEeCYWb7D_hg3dw"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>

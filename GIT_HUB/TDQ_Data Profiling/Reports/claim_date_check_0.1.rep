@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_QnBncEvtEeCEJ5SL6lrm5A" name="claim_date_check" fileName="/DQ_TUTORIALS/TDQ_Data Profiling/Reports/claim_date_check_0.1.rep" creationDate="2011-03-11T22:38:41.511+0800">
+  <clientDependency href="../Analyses/TUTO74/claim_date_check_0.1.ana#_QnBnd0vtEeCEJ5SL6lrm5A"/>
+  <taggedValue xmi:id="_QnBncUvtEeCEJ5SL6lrm5A" tag="OutputFolder" value=""/>
+  <taggedValue xmi:id="_QnUiYUvtEeCEJ5SL6lrm5A" tag="Property File" value="/DQ_TUTORIALS/TDQ_Data Profiling/Reports/Y2xhaW1fZGF0ZV9jaGVjaw==20110311033841_0.1.properties"/>
+  <taggedValue xmi:id="_Sn22wEvtEeCEJ5SL6lrm5A" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_Sn22wUvtEeCEJ5SL6lrm5A" tag="Description" value=""/>
+  <taggedValue xmi:id="_Sn22wkvtEeCEJ5SL6lrm5A" tag="Author" value="xqliu@talend.com"/>
+  <taggedValue xmi:id="_Sn22w0vtEeCEJ5SL6lrm5A" tag="Status" value="development"/>
+  <taggedValue xmi:id="_Sn22xEvtEeCEJ5SL6lrm5A" tag="OutputFileName" value=""/>
+  <taggedValue xmi:id="_Sn22xUvtEeCEJ5SL6lrm5A" tag="Single output" value="false"/>
+  <taggedValue xmi:id="_Sn22xkvtEeCEJ5SL6lrm5A" tag="OutputType" value="pdf"/>
+  <taggedValue xmi:id="_H-J6YL1-EeCx7d-tfT55CQ" tag="REP_DBINFO_DBTYPE" value="HSQL"/>
+  <taggedValue xmi:id="_H-J6Yb1-EeCx7d-tfT55CQ" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
+  <taggedValue xmi:id="_H-J6Yr1-EeCx7d-tfT55CQ" tag="REP_DBINFO_USER" value="sa"/>
+  <taggedValue xmi:id="_H-J6Y71-EeCx7d-tfT55CQ" tag="REP_DBINFO_PASSWORD" value=""/>
+  <taggedValue xmi:id="_H-J6ZL1-EeCx7d-tfT55CQ" tag="REP_DBINFO_DRIVER" value="org.hsqldb.jdbcDriver"/>
+  <taggedValue xmi:id="_H-J6Zb1-EeCx7d-tfT55CQ" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.HSQLDialect"/>
+  <taggedValue xmi:id="_H-J6Zr1-EeCx7d-tfT55CQ" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:/null"/>
+  <taggedValue xmi:id="_H-J6Z71-EeCx7d-tfT55CQ" tag="REP_DBINFO_HOST" value=""/>
+  <taggedValue xmi:id="_H-J6aL1-EeCx7d-tfT55CQ" tag="REP_DBINFO_PORT" value=""/>
+  <taggedValue xmi:id="_H-KhcL1-EeCx7d-tfT55CQ" tag="REP_DBINFO_SCHEMA" value=""/>
+  <component href="../Analyses/TUTO74/claim_date_check_0.1.ana#_NqmnoAhXEeCYWb7D_hg3dw"/>
+  <analysisMap xmi:id="_QnBnckvtEeCEJ5SL6lrm5A" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/TUTO74/claim_date_check_0.1.ana#_NqmnoAhXEeCYWb7D_hg3dw"/>
+  </analysisMap>
+  <ExecInformations xmi:id="_6feqcH-SEeCx04HGvj8drw" executionDate="2011-05-16T16:34:55.314+0800" executionDuration="12" executionNumber="2" lastRunOk="true" lastExecutionNumberOk="2"/>
+</dataquality.reports:TdReport>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_5FBeAAhGEeCLDvUH5rNdLg" name="cif_country" fileName="/DQ_TUTORIALS/TDQ_Data Profiling/Analyses/cif/cif_country_0.1.ana" creationDate="2010-12-15T20:28:59.232+0800">
+    <clientDependency href="../../../metadata/connections/CIF_0.1.item#_hksksH-OEeCx04HGvj8drw"/>
+    <taggedValue xmi:id="_5FBeAQhGEeCLDvUH5rNdLg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_5FBeAghGEeCLDvUH5rNdLg" tag="Author" value="xqliu@talend.com"/>
+    <taggedValue xmi:id="_5FBeAwhGEeCLDvUH5rNdLg" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_5FBeBAhGEeCLDvUH5rNdLg" tag="Description" value=""/>
+    <taggedValue xmi:id="_5FBeBQhGEeCLDvUH5rNdLg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_5FLPAQhGEeCLDvUH5rNdLg" tag="Property File" value="/DQ_TUTORIALS/TDQ_Data Profiling/Analyses/cif/Y2lmX2NvdW50cnk=20101215012859_0.1.properties"/>
+    <context xmi:id="_5FBeBghGEeCLDvUH5rNdLg">
+      <connection href="../../../metadata/connections/CIF_0.1.item#_ONJTAQhiEeCYWb7D_hg3dw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m88whnEeCYWb7D_hg3dw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m89whnEeCYWb7D_hg3dw"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m8-whnEeCYWb7D_hg3dw"/>
+    </context>
+    <results xmi:id="_5FBeBwhGEeCLDvUH5rNdLg">
+      <resultMetadata xmi:id="_5FBeCAhGEeCLDvUH5rNdLg" executionDate="2011-05-20T13:47:22.490+0800" executionDuration="514" executionNumber="5" lastRunOk="true" lastExecutionNumberOk="5"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_tifzcH-OEeCx04HGvj8drw" count="239" computed="true">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m88whnEeCYWb7D_hg3dw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tmdGYH-OEeCx04HGvj8drw" body="SELECT COUNT(*) FROM `cif`.`country` " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_tifzcX-OEeCx04HGvj8drw" count="239" computed="true">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m88whnEeCYWb7D_hg3dw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tmdGYX-OEeCx04HGvj8drw" body="SELECT COUNT(*) FROM `cif`.`country` WHERE `Column0` IS NULL " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_tifzcn-OEeCx04HGvj8drw" count="239" computed="true" distinctValueCount="239">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m88whnEeCYWb7D_hg3dw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tmdGYn-OEeCx04HGvj8drw" body="SELECT COUNT(DISTINCT `Column0`) FROM `cif`.`country` " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_tifzc3-OEeCx04HGvj8drw" count="239" computed="true" uniqueValueCount="239">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m88whnEeCYWb7D_hg3dw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tmdGY3-OEeCx04HGvj8drw" body="SELECT COUNT(*) FROM (SELECT `Column0`, COUNT(*) mycount FROM `cif`.`country`  GROUP BY `Column0` HAVING mycount = 1) AS myquery" language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_tifzdH-OEeCx04HGvj8drw" count="239" computed="true" duplicateValueCount="0">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m88whnEeCYWb7D_hg3dw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tmdGZH-OEeCx04HGvj8drw" body="SELECT COUNT(*) FROM (SELECT `Column0`, COUNT(*) mycount FROM `cif`.`country`  m  GROUP BY `Column0` HAVING mycount > 1) AS myquery" language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_tifzdX-OEeCx04HGvj8drw" count="239" computed="true">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m88whnEeCYWb7D_hg3dw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tmdtcH-OEeCx04HGvj8drw" body="SELECT COUNT(`Column0`) FROM `cif`.`country` WHERE TRIM(`Column0`) = '' " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_tigagX-OEeCx04HGvj8drw" count="239" computed="true">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m89whnEeCYWb7D_hg3dw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tmdtcX-OEeCx04HGvj8drw" body="SELECT COUNT(*) FROM `cif`.`country` " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_tigagn-OEeCx04HGvj8drw" count="239" computed="true">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m89whnEeCYWb7D_hg3dw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tmdtcn-OEeCx04HGvj8drw" body="SELECT COUNT(*) FROM `cif`.`country` WHERE `Column1` IS NULL " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_tigag3-OEeCx04HGvj8drw" count="239" computed="true" distinctValueCount="239">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m89whnEeCYWb7D_hg3dw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tmdtc3-OEeCx04HGvj8drw" body="SELECT COUNT(DISTINCT `Column1`) FROM `cif`.`country` " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_tigahH-OEeCx04HGvj8drw" count="239" computed="true" uniqueValueCount="239">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m89whnEeCYWb7D_hg3dw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tmdtdH-OEeCx04HGvj8drw" body="SELECT COUNT(*) FROM (SELECT `Column1`, COUNT(*) mycount FROM `cif`.`country`  GROUP BY `Column1` HAVING mycount = 1) AS myquery" language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_tigahX-OEeCx04HGvj8drw" count="239" computed="true" duplicateValueCount="0">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m89whnEeCYWb7D_hg3dw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tmdtdX-OEeCx04HGvj8drw" body="SELECT COUNT(*) FROM (SELECT `Column1`, COUNT(*) mycount FROM `cif`.`country`  m  GROUP BY `Column1` HAVING mycount > 1) AS myquery" language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_tigahn-OEeCx04HGvj8drw" count="239" computed="true">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m89whnEeCYWb7D_hg3dw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tmdtdn-OEeCx04HGvj8drw" body="SELECT COUNT(`Column1`) FROM `cif`.`country` WHERE TRIM(`Column1`) = '' " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_tigaiH-OEeCx04HGvj8drw" count="239" computed="true">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m8-whnEeCYWb7D_hg3dw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tmdtd3-OEeCx04HGvj8drw" body="SELECT COUNT(*) FROM `cif`.`country` " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_tigaiX-OEeCx04HGvj8drw" count="239" computed="true">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m8-whnEeCYWb7D_hg3dw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tmdteH-OEeCx04HGvj8drw" body="SELECT COUNT(*) FROM `cif`.`country` WHERE `Column2` IS NULL " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_tigain-OEeCx04HGvj8drw" count="239" computed="true" distinctValueCount="237">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m8-whnEeCYWb7D_hg3dw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tmdteX-OEeCx04HGvj8drw" body="SELECT COUNT(DISTINCT `Column2`) FROM `cif`.`country` " language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_tigai3-OEeCx04HGvj8drw" count="239" computed="true" uniqueValueCount="235">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m8-whnEeCYWb7D_hg3dw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tmdten-OEeCx04HGvj8drw" body="SELECT COUNT(*) FROM (SELECT `Column2`, COUNT(*) mycount FROM `cif`.`country`  GROUP BY `Column2` HAVING mycount = 1) AS myquery" language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_tigajH-OEeCx04HGvj8drw" count="239" computed="true" duplicateValueCount="2">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m8-whnEeCYWb7D_hg3dw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tmdte3-OEeCx04HGvj8drw" body="SELECT COUNT(*) FROM (SELECT `Column2`, COUNT(*) mycount FROM `cif`.`country`  m  GROUP BY `Column2` HAVING mycount > 1) AS myquery" language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_tigajX-OEeCx04HGvj8drw" count="239" computed="true">
+        <analyzedElement xsi:type="relational:TdColumn" href="../../../metadata/connections/CIF_0.1.item#_74m8-whnEeCYWb7D_hg3dw"/>
+        <indicatorDefinition href="../../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tmdtfH-OEeCx04HGvj8drw" body="SELECT COUNT(`Column2`) FROM `cif`.`country` WHERE TRIM(`Column2`) = '' " language="MySQL"/>
+      </indicators>
+    </results>
+    <parameters xmi:id="_5FBeCQhGEeCLDvUH5rNdLg" dataFilter="_5K1yLwhGEeCLDvUH5rNdLg" analysisType="Multiple Column Analysis"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_5K1yLwhGEeCLDvUH5rNdLg" name="cif_country">
+    <ranges xmi:id="_5K1yMAhGEeCLDvUH5rNdLg">
+      <expressions xmi:id="_5K1yMQhGEeCLDvUH5rNdLg">
+        <expression xsi:type="relational:TdExpression" xmi:id="_5K1yMghGEeCLDvUH5rNdLg" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
