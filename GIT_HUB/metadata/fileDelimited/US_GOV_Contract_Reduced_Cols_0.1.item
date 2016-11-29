@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_hKddYBAXEeOOetIfLozI9A" name="US_GOV_Contract_Reduced_Cols" dataPackage="_hKddYRAXEeOOetIfLozI9A" Server="Localhost 127.0.0.1" FilePath="C:/Talend/5.3.1/studio/Talend-Studio-r104014-V5.3.1/convertedSpending.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_hKddYRAXEeOOetIfLozI9A" name="default" dataManager="_hKddYBAXEeOOetIfLozI9A">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_hKddYhAXEeOOetIfLozI9A" name="metadata" id="_ah3YwBAXEeOOetIfLozI9A" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hKddYxAXEeOOetIfLozI9A" name="UniqueTransactionID" label="UniqueTransactionID" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hKddZBAXEeOOetIfLozI9A" name="TransactionStatus" label="TransactionStatus" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hKddZRAXEeOOetIfLozI9A" name="AwardType" label="AwardType" length="22" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hKddZhAXEeOOetIfLozI9A" name="ContractPricing" label="ContractPricing" length="45" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hKddZxAXEeOOetIfLozI9A" name="ContractingAgency" label="ContractingAgency" length="53" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hKddaBAXEeOOetIfLozI9A" name="DUNSNumber" label="DUNSNumber" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hKddaRAXEeOOetIfLozI9A" name="DateSigned" label="DateSigned" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hKddahAXEeOOetIfLozI9A" name="DollarsObligated" label="DollarsObligated" length="20" precision="3" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;" originalLength="20"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hKddaxAXEeOOetIfLozI9A" name="ParentDUNSNumber" label="ParentDUNSNumber" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hKddbBAXEeOOetIfLozI9A" name="ParentRecipientOrCompanyName" label="ParentRecipientOrCompanyName" length="45" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hKddbRAXEeOOetIfLozI9A" name="PlaceofPerformanceCity" label="PlaceofPerformanceCity" length="19" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hKddbhAXEeOOetIfLozI9A" name="PlaceofPerformanceState" label="PlaceofPerformanceState" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hKddbxAXEeOOetIfLozI9A" name="PlaceofPerformanceZipCode" label="PlaceofPerformanceZipCode" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hKddcBAXEeOOetIfLozI9A" name="VendorName" label="VendorName" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hKddcRAXEeOOetIfLozI9A" name="FiscalYear" label="FiscalYear" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

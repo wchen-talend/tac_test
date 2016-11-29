@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_6J2xILXcEeaht_7CegINcw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_6J2xIbXcEeaht_7CegINcw" comment="" name="KEY_LOGS_DIRECTORY" prompt="KEY_LOGS_DIRECTORY?" promptNeeded="true" type="id_Directory" value="C:/Talend/BigData/"/>
+  <contextParameter xmi:id="_6J2xIrXcEeaht_7CegINcw" comment="" name="MYSQL_DBNAME_TO_MIGRATE" prompt="MYSQL DB Schema name that has the tables you want to migrate?" promptNeeded="true" type="id_String" value="dstar_crm"/>
+  <contextParameter xmi:id="_6J2xI7XcEeaht_7CegINcw" comment="" name="MYSQL_HOST_or_IP" prompt="MYSQL_HOST_or_IP - Localhost may not work as it will need to access this DB from the clust so it should an IP or host that is available from the VM?" promptNeeded="true" type="id_String" value="192.168.56.1"/>
+  <contextParameter xmi:id="_6J2xJLXcEeaht_7CegINcw" comment="" name="MYSQL_PORT" prompt="MYSQL_PORT?" promptNeeded="true" type="id_String" value="3306"/>
+  <contextParameter xmi:id="_6J2xJbXcEeaht_7CegINcw" comment="" name="MYSQL_PWD" prompt="MYSQL_PWD?" promptNeeded="true" type="id_Password" value="vdHxNPcgp2q8Pv4LX4oclw=="/>
+  <contextParameter xmi:id="_6J2xJrXcEeaht_7CegINcw" comment="" name="MYSQL_USERNAME" prompt="MYSQL_USERNAME?" promptNeeded="true" type="id_String" value="tisadmin"/>
+  <contextParameter xmi:id="_6J2xJ7XcEeaht_7CegINcw" comment="" name="HDFS_LOCATION_TARGET" prompt="HDFS_LOCATION_TARGET?" promptNeeded="true" type="id_String" value="/user/hdp/sqoop/"/>
+</talendfile:ContextType>

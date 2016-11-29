@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_6JkdQLXcEeaht_7CegINcw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_6JkdQbXcEeaht_7CegINcw" comment="" name="namenode_host" prompt="namenode_host?" promptNeeded="false" type="id_String" value="sandbox"/>
+  <contextParameter xmi:id="_6JkdQrXcEeaht_7CegINcw" comment="" name="namenode_port" prompt="namenode_port?" promptNeeded="false" type="id_String" value="8020"/>
+  <contextParameter xmi:id="_6JkdQ7XcEeaht_7CegINcw" comment="" name="user" prompt="user?" promptNeeded="false" type="id_String" value="sandbox"/>
+  <contextParameter xmi:id="_6JkdRLXcEeaht_7CegINcw" comment="" name="templeton_host" prompt="templeton_host?" promptNeeded="false" type="id_String" value="sandbox"/>
+  <contextParameter xmi:id="_6JkdRbXcEeaht_7CegINcw" comment="" name="templeton_port" prompt="templeton_port?" promptNeeded="false" type="id_String" value="50111"/>
+  <contextParameter xmi:id="_6JkdRrXcEeaht_7CegINcw" comment="" name="hive_host" prompt="hive_host?" promptNeeded="false" type="id_String" value="sandbox"/>
+  <contextParameter xmi:id="_6JkdR7XcEeaht_7CegINcw" comment="" name="hive_port" prompt="hive_port?" promptNeeded="false" type="id_String" value="9083"/>
+  <contextParameter xmi:id="_6JkdSLXcEeaht_7CegINcw" comment="" name="jobtracker_host" prompt="jobtracker_host?" promptNeeded="false" type="id_String" value="sandbox"/>
+  <contextParameter xmi:id="_6JkdSbXcEeaht_7CegINcw" comment="" name="jobtracker_port" prompt="jobtracker_port?" promptNeeded="false" type="id_String" value="50300"/>
+  <contextParameter xmi:id="_6JkdSrXcEeaht_7CegINcw" comment="" name="mysql_host" prompt="mysql_host?" promptNeeded="false" type="id_String" value="sandbox"/>
+  <contextParameter xmi:id="_6JkdS7XcEeaht_7CegINcw" comment="" name="mysql_port" prompt="mysql_port?" promptNeeded="false" type="id_String" value="3306"/>
+  <contextParameter xmi:id="_6JkdTLXcEeaht_7CegINcw" comment="" name="mysql_user" prompt="mysql_user?" promptNeeded="false" type="id_String" value="hdp"/>
+  <contextParameter xmi:id="_6JkdTbXcEeaht_7CegINcw" comment="" name="mysql_passwd" prompt="mysql_passwd?" promptNeeded="false" type="id_String" value="hdp"/>
+  <contextParameter xmi:id="_6JkdTrXcEeaht_7CegINcw" comment="" name="mysql_testdb" prompt="mysql_testdb?" promptNeeded="false" type="id_String" value="testdb"/>
+  <contextParameter xmi:id="_6JkdT7XcEeaht_7CegINcw" comment="" name="hbase_host" prompt="hbase_host?" promptNeeded="false" type="id_String" value="sandbox"/>
+  <contextParameter xmi:id="_6JkdULXcEeaht_7CegINcw" comment="" name="hbase_port" prompt="hbase_port?" promptNeeded="false" type="id_String" value="2181"/>
+</talendfile:ContextType>

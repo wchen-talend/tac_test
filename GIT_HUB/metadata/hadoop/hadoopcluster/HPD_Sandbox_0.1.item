@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendHadoopCluster:HadoopClusterConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendHadoopCluster="http://www.talend.org/hadoopcluster" xmi:id="_3amGIA_sEeOFLZHF8lFKdw" name="HPD_Sandbox" label="HPD_Sandbox" distribution="HORTONWORKS" dfVersion="HDP_2_5" nameNodeURI="hdfs://sandbox:8020" jobTrackerURI="sandbox:50300" userName="sandbox" group="">
+  <connectionList>_n-QYUBAKEeOOetIfLozI9A</connectionList>
+</TalendHadoopCluster:HadoopClusterConnection>

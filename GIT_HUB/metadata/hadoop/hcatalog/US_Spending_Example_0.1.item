@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendHCatalog:HCatalogConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendHCatalog="http://www.talend.org/hcatalog" xmi:id="_n-S0kBAKEeOOetIfLozI9A" name="US_Spending_Example" label="US_Spending_Example" relativeHadoopClusterId="_3ajC0A_sEeOFLZHF8lFKdw" hostName="sandbox" userName="sandbox" database="talend"/>
