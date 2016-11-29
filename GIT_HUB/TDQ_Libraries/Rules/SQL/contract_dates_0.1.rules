@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_xf8CUAhOEeCYWb7D_hg3dw" name="contract_dates" supplierDependency="_xHsPgAhQEeCYWb7D_hg3dw" criticalityLevel="1" whereExpression="Begin_dt &lt; End_dt">
+    <taggedValue xmi:id="_xf8CUQhOEeCYWb7D_hg3dw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_xf8CUghOEeCYWb7D_hg3dw" tag="Author" value="user@company.com"/>
+    <taggedValue xmi:id="_xf8CUwhOEeCYWb7D_hg3dw" tag="Purpose"/>
+    <taggedValue xmi:id="_xf8CVAhOEeCYWb7D_hg3dw" tag="Description"/>
+    <taggedValue xmi:id="_xf8CVQhOEeCYWb7D_hg3dw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_xf8CVghOEeCYWb7D_hg3dw" tag="Validation_Status" value="true"/>
+    <taggedValue xmi:id="_xgifQQhOEeCYWb7D_hg3dw" tag="Property File" value="/DQ_TUTORIALS/TDQ_Libraries/Rules/SQL/Y29udHJhY3RfZGF0ZXM=20101215022524_0.1.properties"/>
+    <categories href="../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_xf8CVwhOEeCYWb7D_hg3dw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_xHsPgAhQEeCYWb7D_hg3dw" kind="Usage" supplier="_xf8CUAhOEeCYWb7D_hg3dw">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/TUTO73/contract_dates_0.1.ana#_KBcGAH-fEeC8IaGPxZzaMw"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>

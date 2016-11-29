@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.rules:WhereRule xmi:id="_-ze1QH-dEeC8IaGPxZzaMw" name="claim_date_check" supplierDependency="_a63WsH-eEeC8IaGPxZzaMw" criticalityLevel="1" whereExpression="Date >= Begin_dt and Date &lt;= End_dt">
+    <taggedValue xmi:id="_-ze1QX-dEeC8IaGPxZzaMw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_-ze1Qn-dEeC8IaGPxZzaMw" tag="Author" value="trunk@talend.com"/>
+    <taggedValue xmi:id="_-ze1Q3-dEeC8IaGPxZzaMw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_-ze1RH-dEeC8IaGPxZzaMw" tag="Description" value=""/>
+    <taggedValue xmi:id="_-ze1RX-dEeC8IaGPxZzaMw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_-ze1Rn-dEeC8IaGPxZzaMw" tag="Validation_Status" value="true"/>
+    <categories href="../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_-zfcUH-dEeC8IaGPxZzaMw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+    <joins xmi:id="_MTSCQH-eEeC8IaGPxZzaMw" operator="=" tableAliasA="claim" tableAliasB="contract" columnAliasA="cont_num" columnAliasB="number">
+      <colA xsi:type="relational:TdColumn" href="../../../metadata/connections/CRM_0.1.item#_Jp4k00vvEeCEJ5SL6lrm5A"/>
+      <colB xsi:type="relational:TdColumn" href="../../../metadata/connections/CRM_0.1.item#_Jp4kQ0vvEeCEJ5SL6lrm5A"/>
+    </joins>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_a63WsH-eEeC8IaGPxZzaMw" kind="Usage" supplier="_-ze1QH-dEeC8IaGPxZzaMw">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/TUTO74/claim_date_check_0.1.ana#_NqmnoAhXEeCYWb7D_hg3dw"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>

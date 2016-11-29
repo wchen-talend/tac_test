@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_nUrn4AhREeCYWb7D_hg3dw" name="cust_age" supplierDependency="_xo_wYAhREeCYWb7D_hg3dw" criticalityLevel="1" whereExpression="18&lt;=((TO_DAYS(NOW())-TO_DAYS(DOB))/365)">
+    <taggedValue xmi:id="_nUrn4QhREeCYWb7D_hg3dw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_nUrn4ghREeCYWb7D_hg3dw" tag="Author" value="user@company.com"/>
+    <taggedValue xmi:id="_nUrn4whREeCYWb7D_hg3dw" tag="Purpose"/>
+    <taggedValue xmi:id="_nUrn5AhREeCYWb7D_hg3dw" tag="Description"/>
+    <taggedValue xmi:id="_nUrn5QhREeCYWb7D_hg3dw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_nUrn5ghREeCYWb7D_hg3dw" tag="Validation_Status" value="true"/>
+    <taggedValue xmi:id="_nU-i0QhREeCYWb7D_hg3dw" tag="Property File" value="/DQ_TUTORIALS/TDQ_Libraries/Rules/SQL/Y3VzdF9hZ2U=20101215024544_0.1.properties"/>
+    <categories href="../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_nUrn5whREeCYWb7D_hg3dw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_xo_wYAhREeCYWb7D_hg3dw" kind="Usage" supplier="_nUrn4AhREeCYWb7D_hg3dw">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/TUTO73/cust_table_0.1.ana#_TCblYH-fEeC8IaGPxZzaMw"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>
