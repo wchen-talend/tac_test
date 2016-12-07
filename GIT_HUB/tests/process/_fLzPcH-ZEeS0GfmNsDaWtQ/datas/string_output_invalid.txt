@@ -1,8 +1,0 @@
-April;advanced condition failed
-June;advanced condition failed
-July;advanced condition failed
-August;advanced condition failed
-September;advanced condition failed
-October;advanced condition failed
-November;advanced condition failed
-December;advanced condition failed

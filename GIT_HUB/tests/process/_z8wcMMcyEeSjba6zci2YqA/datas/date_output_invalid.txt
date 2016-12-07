@@ -1,2 +1,0 @@
-email;error_message
-newLine @your.com;"Invalid Email Format"
